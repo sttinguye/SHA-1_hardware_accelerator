@@ -1,0 +1,3545 @@
+
+base_sys_eval.elf:     file format elf32-littlenios2
+base_sys_eval.elf
+architecture: nios2:r1, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00000020 paddr 0x00000020 align 2**12
+         filesz 0x00001c8c memsz 0x00001c8c flags r-x
+    LOAD off    0x00002cac vaddr 0x00001cac paddr 0x00001d9c align 2**12
+         filesz 0x000000f0 memsz 0x000000f0 flags rw-
+    LOAD off    0x00002e8c vaddr 0x00001e8c paddr 0x00001e8c align 2**12
+         filesz 0x00000000 memsz 0x00000164 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00000000  00000000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000000  00000020  00000020  00002d9c  2**0
+                  CONTENTS
+  2 .text         000019a0  00000020  00000020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       000002ec  000019c0  000019c0  000029c0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rwdata       000000f0  00001cac  00001d9c  00002cac  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          00000164  00001e8c  00001e8c  00002e8c  2**2
+                  ALLOC, SMALL_DATA
+  6 .sys_mem      00000000  00001ff0  00001ff0  00002d9c  2**0
+                  CONTENTS
+  7 .comment      00000023  00000000  00000000  00002d9c  2**0
+                  CONTENTS, READONLY
+  8 .debug_aranges 00000360  00000000  00000000  00002dc0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   00004ecd  00000000  00000000  00003120  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00001aa3  00000000  00000000  00007fed  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   00001b1f  00000000  00000000  00009a90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame  00000594  00000000  00000000  0000b5b0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    00001638  00000000  00000000  0000bb44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    00002b2e  00000000  00000000  0000d17c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_alt_sim_info 00000030  00000000  00000000  0000fcac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_ranges 00000460  00000000  00000000  0000fce0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .thread_model 00000003  00000000  00000000  0001152e  2**0
+                  CONTENTS, READONLY
+ 18 .cpu          00000009  00000000  00000000  00011531  2**0
+                  CONTENTS, READONLY
+ 19 .qsys         00000001  00000000  00000000  0001153a  2**0
+                  CONTENTS, READONLY
+ 20 .simulation_enabled 00000001  00000000  00000000  0001153b  2**0
+                  CONTENTS, READONLY
+ 21 .sysid_hash   00000004  00000000  00000000  0001153c  2**0
+                  CONTENTS, READONLY
+ 22 .sysid_base   00000004  00000000  00000000  00011540  2**0
+                  CONTENTS, READONLY
+ 23 .sysid_time   00000004  00000000  00000000  00011544  2**0
+                  CONTENTS, READONLY
+ 24 .stderr_dev   0000000d  00000000  00000000  00011548  2**0
+                  CONTENTS, READONLY
+ 25 .stdin_dev    0000000d  00000000  00000000  00011555  2**0
+                  CONTENTS, READONLY
+ 26 .stdout_dev   0000000d  00000000  00000000  00011562  2**0
+                  CONTENTS, READONLY
+ 27 .sopc_system_name 00000008  00000000  00000000  0001156f  2**0
+                  CONTENTS, READONLY
+ 28 .quartus_project_dir 00000028  00000000  00000000  00011577  2**0
+                  CONTENTS, READONLY
+ 29 .jdi          000053e8  00000000  00000000  0001159f  2**0
+                  CONTENTS, READONLY
+ 30 .sopcinfo     00048f72  00000000  00000000  00016987  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l    d  .entry	00000000 .entry
+00000020 l    d  .exceptions	00000000 .exceptions
+00000020 l    d  .text	00000000 .text
+000019c0 l    d  .rodata	00000000 .rodata
+00001cac l    d  .rwdata	00000000 .rwdata
+00001e8c l    d  .bss	00000000 .bss
+00001ff0 l    d  .sys_mem	00000000 .sys_mem
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../base_sys_eval_bsp//obj/HAL/src/crt0.o
+00000068 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 msg.c
+00000000 l    df *ABS*	00000000 sha1.c
+00001e8c l     O .bss	00000001 paddingFlag.2372
+00001e90 l     O .bss	00000008 uint32ArrayIndex.2351
+00001eb0 l     O .bss	00000140 SHA1_expanded_word
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 lib2-divmod.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 malloc.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 sbrkr.c
+00000000 l    df *ABS*	00000000 strcpy.c
+00000000 l    df *ABS*	00000000 impure.c
+00001cac l     O .rwdata	000000e0 impure_data
+00000000 l    df *ABS*	00000000 int_errno.c
+00000000 l    df *ABS*	00000000 alt_load.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_printf.c
+00000000 l    df *ABS*	00000000 alt_putchar.c
+00000000 l    df *ABS*	00000000 alt_putstr.c
+00000000 l    df *ABS*	00000000 alt_sbrk.c
+00001d94 l     O .rwdata	00000004 heap_end
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_write.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
+00000000 l    df *ABS*	00000000 alt_icache_flush.c
+00000000 l    df *ABS*	00000000 strlen.c
+00001680 g     F .text	0000002c alt_main
+00001574 g     F .text	0000002c strcpy
+000008ec g     F .text	000001d0 sha_1
+00001d9c g       *ABS*	00000000 __flash_rwdata_start
+00001ff0 g       *ABS*	00000000 __alt_heap_start
+0000006c g     F .text	00000080 showResultOnLEDs
+00001864 g     F .text	00000038 alt_putstr
+00001964 g     F .text	00000008 altera_nios2_gen2_irq_init
+00000000 g     F .entry	0000001c __reset
+00000020 g       *ABS*	00000000 __flash_exceptions_start
+00001ea0 g     O .bss	00000004 errno
+00001ea8 g     O .bss	00000004 alt_argv
+00009d8c g       *ABS*	00000000 _gp
+000012c0 g     F .text	00000014 malloc
+00001204 g     F .text	00000064 .hidden __udivsi3
+0000196c g     F .text	00000038 alt_icache_flush
+00001524 g     F .text	00000050 _sbrk_r
+00001d8c g     O .rwdata	00000004 _global_impure_ptr
+00001ff0 g       *ABS*	00000000 __bss_end
+00000b94 g     F .text	00000578 .hidden __udivdi3
+00001940 g     F .text	00000018 alt_dcache_flush_all
+00001d9c g       *ABS*	00000000 __ram_rwdata_end
+00001cac g       *ABS*	00000000 __ram_rodata_end
+00001268 g     F .text	00000058 .hidden __umodsi3
+00001ff0 g       *ABS*	00000000 end
+00009c40 g       *ABS*	00000000 __alt_stack_pointer
+0000190c g     F .text	00000034 altera_avalon_jtag_uart_write
+000003c8 g     F .text	00000040 MSG_freeMemory
+000012e8 g     F .text	000000e4 _free_r
+000016ac g     F .text	00000170 alt_printf
+00000020 g     F .text	0000004c _start
+00001908 g     F .text	00000004 alt_sys_init
+00000000 g       *ABS*	00000000 __alt_mem_sys_mem
+00001cac g       *ABS*	00000000 __ram_rwdata_start
+000019c0 g       *ABS*	00000000 __ram_rodata_start
+00000408 g     F .text	000003b8 SHA1_init
+00001ff0 g       *ABS*	00000000 __alt_stack_base
+0000032c g     F .text	0000009c MSG_printUint32Representation
+0000189c g     F .text	0000004c sbrk
+00001e8c g       *ABS*	00000000 __bss_start
+000000ec g     F .text	000000ec main
+00001ea4 g     O .bss	00000004 alt_envp
+000007c0 g     F .text	00000034 SHA1_freeMemory
+00009c40 g       *ABS*	00000000 __alt_heap_limit
+000013cc g     F .text	00000158 _malloc_r
+0000110c g     F .text	00000084 .hidden __divsi3
+000001d8 g     F .text	00000154 MSG_init
+000019c0 g       *ABS*	00000000 __flash_rodata_start
+000018e8 g     F .text	00000020 alt_irq_init
+00001bac g     O .rodata	00000100 .hidden __clz_tab
+000007f4 g     F .text	000000f8 SHA1_printPreProcessedPacket
+00001d90 g     O .rwdata	00000004 _impure_ptr
+00001eac g     O .bss	00000004 alt_argc
+00000abc g     F .text	00000078 SHA1_printFinalHash
+00001d98 g     O .rwdata	00000004 sys_jtag_uart
+00000b34 g     F .text	00000060 SHA1_updateInputHashForNextBlock
+00000020 g       *ABS*	00000000 __ram_exceptions_start
+00001d9c g       *ABS*	00000000 _edata
+00001ff0 g       *ABS*	00000000 _end
+00000020 g       *ABS*	00000000 __ram_exceptions_end
+00001190 g     F .text	00000074 .hidden __modsi3
+00009c40 g       *ABS*	00000000 __alt_data_end
+0000001c g       .entry	00000000 _exit
+000019a4 g     F .text	0000001c strlen
+0000181c g     F .text	00000048 alt_putchar
+00001e98 g     O .bss	00000004 __malloc_sbrk_start
+00001958 g     F .text	0000000c alt_icache_flush_all
+00001e9c g     O .bss	00000004 __malloc_free_list
+000015a0 g     F .text	000000e0 alt_load
+000012d4 g     F .text	00000014 free
+
+
+
+Disassembly of section .entry:
+
+00000000 <__reset>:
+#if NIOS2_ICACHE_SIZE > 0 && defined(ALT_ALLOW_CODE_AT_RESET) && (!defined(ALT_SIM_OPTIMIZE) || defined(NIOS2_ECC_PRESENT))
+    /* Assume the instruction cache size is always a power of two. */
+#if NIOS2_ICACHE_SIZE > 0x8000
+    movhi r2, %hi(NIOS2_ICACHE_SIZE)
+#else
+    movui r2, NIOS2_ICACHE_SIZE
+   0:	00840014 	movui	r2,4096
+#endif
+
+0:
+    initi r2
+   4:	1001483a 	initi	r2
+    addi r2, r2, -NIOS2_ICACHE_LINE_SIZE
+   8:	10bff804 	addi	r2,r2,-32
+    bgt r2, zero, 0b
+   c:	00bffd16 	blt	zero,r2,4 <_gp+0xffff6278>
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+  10:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+  14:	08400814 	ori	at,at,32
+    jmp r1
+  18:	0800683a 	jmp	at
+
+0000001c <_exit>:
+  1c:	00000000 	call	0 <__reset>
+
+Disassembly of section .text:
+
+00000020 <_start>:
+
+    /* Assume the data cache size is always a power of two. */
+#if NIOS2_DCACHE_SIZE > 0x8000
+    movhi r2, %hi(NIOS2_DCACHE_SIZE)
+#else
+    movui r2, NIOS2_DCACHE_SIZE
+      20:	00820014 	movui	r2,2048
+#endif
+
+0:
+    initd 0(r2)
+      24:	10000033 	initd	0(r2)
+#ifdef NIOS2_ECC_PRESENT
+    addi r2, r2, -4
+#else
+    addi r2, r2, -NIOS2_DCACHE_LINE_SIZE
+      28:	10bff804 	addi	r2,r2,-32
+#endif
+    bgt r2, zero, 0b
+      2c:	00bffd16 	blt	zero,r2,24 <_gp+0xffff6298>
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+      30:	06c00034 	movhi	sp,0
+    ori sp, sp, %lo(__alt_stack_pointer)
+      34:	dee71014 	ori	sp,sp,40000
+    movhi gp, %hi(_gp)
+      38:	06800034 	movhi	gp,0
+    ori gp, gp, %lo(_gp)
+      3c:	d6a76314 	ori	gp,gp,40332
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+      40:	00800034 	movhi	r2,0
+    ori r2, r2, %lo(__bss_start)
+      44:	1087a314 	ori	r2,r2,7820
+
+    movhi r3, %hi(__bss_end)
+      48:	00c00034 	movhi	r3,0
+    ori r3, r3, %lo(__bss_end)
+      4c:	18c7fc14 	ori	r3,r3,8176
+
+    beq r2, r3, 1f
+      50:	10c00326 	beq	r2,r3,60 <_start+0x40>
+
+0:
+    stw zero, (r2)
+      54:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+      58:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+      5c:	10fffd36 	bltu	r2,r3,54 <_gp+0xffff62c8>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+      60:	00015a00 	call	15a0 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+      64:	00016800 	call	1680 <alt_main>
+
+00000068 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+      68:	003fff06 	br	68 <_gp+0xffff62dc>
+
+0000006c <showResultOnLEDs>:
+void showResultOnLEDs(SHA1_packet_t* packet)
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	if(packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_A] != correctHashValues[SHA1_HASH_A])
+      6c:	20800017 	ldw	r2,0(r4)
+      70:	20c00217 	ldw	r3,8(r4)
+      74:	01298634 	movhi	r4,42520
+      78:	10bfffc4 	addi	r2,r2,-1
+      7c:	10801a24 	muli	r2,r2,104
+      80:	213d2cc4 	addi	r4,r4,-2893
+      84:	1885883a 	add	r2,r3,r2
+      88:	11401517 	ldw	r5,84(r2)
+      8c:	00e00074 	movhi	r3,32769
+      90:	18c40804 	addi	r3,r3,4128
+      94:	2900101e 	bne	r5,r4,d8 <showResultOnLEDs+0x6c>
+	{
+		//0xFF means all OFF
+		LEDS.DATA_REG = 0xFF;
+		return;
+	}
+	else if(packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_B] != correctHashValues[SHA1_HASH_B])
+      98:	11401617 	ldw	r5,88(r2)
+      9c:	01284274 	movhi	r4,41225
+      a0:	212db744 	addi	r4,r4,-18723
+      a4:	29000c1e 	bne	r5,r4,d8 <showResultOnLEDs+0x6c>
+	{
+		//0xFF means all OFF
+		LEDS.DATA_REG = 0xFF;
+		return;
+	}
+	else if (packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_C] != correctHashValues[SHA1_HASH_C])
+      a8:	11401717 	ldw	r5,92(r2)
+      ac:	0120af34 	movhi	r4,33468
+      b0:	21231284 	addi	r4,r4,-29622
+      b4:	2900081e 	bne	r5,r4,d8 <showResultOnLEDs+0x6c>
+	{
+		//0xFF means all OFF
+		LEDS.DATA_REG = 0xFF;
+		return;
+	}
+	else if (packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_D] != correctHashValues[SHA1_HASH_D])
+      b8:	11401817 	ldw	r5,96(r2)
+      bc:	0105aaf4 	movhi	r4,5803
+      c0:	2102cd44 	addi	r4,r4,2869
+      c4:	2900041e 	bne	r5,r4,d8 <showResultOnLEDs+0x6c>
+	{
+		//0xFF means all OFF
+		LEDS.DATA_REG = 0xFF;
+		return;
+	}
+	else if (packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_E] != correctHashValues[SHA1_HASH_E])
+      c8:	11001917 	ldw	r4,100(r2)
+      cc:	008a8cf4 	movhi	r2,10803
+      d0:	10a82e44 	addi	r2,r2,-24391
+      d4:	20800326 	beq	r4,r2,e4 <showResultOnLEDs+0x78>
+	{
+		//0xFF means all OFF
+		LEDS.DATA_REG = 0xFF;
+      d8:	00803fc4 	movi	r2,255
+      dc:	18800015 	stw	r2,0(r3)
+		return;
+      e0:	f800283a 	ret
+	}
+
+    //0x00 means all ON
+    LEDS.DATA_REG = 0x00;
+      e4:	18000015 	stw	zero,0(r3)
+      e8:	f800283a 	ret
+
+000000ec <main>:
+//the correct/expected SHA-1 hash values of the string "FSOC23/24 is fun!"
+static uint32_t correctHashValues[SHA1_NUM_OF_HASH_WORDS_PER_BLOCK] =
+	{0xa617f4b3, 0xa108b6dd, 0x82bb8c4a, 0x16ab0b35, 0x2a32a0b9};
+
+int main(void)
+{
+      ec:	defff304 	addi	sp,sp,-52
+	//Initially, we turn OFF all LEDs, 0xFF means all OFF
+	LEDS.DATA_REG = 0xFF;
+      f0:	00a00074 	movhi	r2,32769
+//the correct/expected SHA-1 hash values of the string "FSOC23/24 is fun!"
+static uint32_t correctHashValues[SHA1_NUM_OF_HASH_WORDS_PER_BLOCK] =
+	{0xa617f4b3, 0xa108b6dd, 0x82bb8c4a, 0x16ab0b35, 0x2a32a0b9};
+
+int main(void)
+{
+      f4:	dfc00c15 	stw	ra,48(sp)
+	//Initially, we turn OFF all LEDs, 0xFF means all OFF
+	LEDS.DATA_REG = 0xFF;
+      f8:	00c03fc4 	movi	r3,255
+//the correct/expected SHA-1 hash values of the string "FSOC23/24 is fun!"
+static uint32_t correctHashValues[SHA1_NUM_OF_HASH_WORDS_PER_BLOCK] =
+	{0xa617f4b3, 0xa108b6dd, 0x82bb8c4a, 0x16ab0b35, 0x2a32a0b9};
+
+int main(void)
+{
+      fc:	dc800b15 	stw	r18,44(sp)
+     100:	dc400a15 	stw	r17,40(sp)
+     104:	dc000915 	stw	r16,36(sp)
+	//Initially, we turn OFF all LEDs, 0xFF means all OFF
+	LEDS.DATA_REG = 0xFF;
+     108:	10840804 	addi	r2,r2,4128
+
+	alt_putstr("### FSOC_WS23/24_Lab01_1120436_764527 started. Works only with ASCII characters! ###\n\n");
+     10c:	01000034 	movhi	r4,0
+	{0xa617f4b3, 0xa108b6dd, 0x82bb8c4a, 0x16ab0b35, 0x2a32a0b9};
+
+int main(void)
+{
+	//Initially, we turn OFF all LEDs, 0xFF means all OFF
+	LEDS.DATA_REG = 0xFF;
+     110:	10c00015 	stw	r3,0(r2)
+
+	alt_putstr("### FSOC_WS23/24_Lab01_1120436_764527 started. Works only with ASCII characters! ###\n\n");
+     114:	21067004 	addi	r4,r4,6592
+     118:	00018640 	call	1864 <alt_putstr>
+
+	/**
+	 * #Step 1: represent the input string as an array of uint32_t values storing
+	 *          the HEX values of the ASCII characters.
+	 */
+	MSG_init(&message, INPUT_STRING, (uint32_t)strlen(INPUT_STRING));
+     11c:	01400034 	movhi	r5,0
+     120:	01800444 	movi	r6,17
+     124:	29468604 	addi	r5,r5,6680
+     128:	d809883a 	mov	r4,sp
+     12c:	00001d80 	call	1d8 <MSG_init>
+	/**
+	 * #Step 2: process the uint32_t array representation of the input string using SHA-1 algorithm.
+	 */
+
+	//initialize the sha1 packet object + do the Pre-Processing step of SHA-1 algorithm.
+	SHA1_init(&packet, &message);
+     130:	d80b883a 	mov	r5,sp
+     134:	d9000604 	addi	r4,sp,24
+     138:	00004080 	call	408 <SHA1_init>
+	/**
+	 * run the SHA-1 algorithm
+	 *
+	 * in file "sha1_config.h", you can turn the debug on or off to see the inner computations
+	 */
+	for(uint64_t i = 0; i < packet.m_numOf512bitBlocks; i++)
+     13c:	0025883a 	mov	r18,zero
+     140:	0021883a 	mov	r16,zero
+     144:	0023883a 	mov	r17,zero
+     148:	d8800717 	ldw	r2,28(sp)
+     14c:	88800f2e 	bgeu	r17,r2,18c <main+0xa0>
+	{
+		//operate on a single pre-processed 512-bit wide input message
+		sha_1(packet.m_512bit_block[i].m_outputHash,
+     150:	d9400817 	ldw	r5,32(sp)
+     154:	2c8b883a 	add	r5,r5,r18
+     158:	29801004 	addi	r6,r5,64
+     15c:	29001504 	addi	r4,r5,84
+     160:	00008ec0 	call	8ec <sha_1>
+				packet.m_512bit_block[i].m_word,
+				packet.m_512bit_block[i].m_inputHash);
+
+		//takes the output hash of the current 512-bit block and assigns to the input hash of the next 512-bit block
+		SHA1_updateInputHashForNextBlock(&packet, i);
+     164:	800b883a 	mov	r5,r16
+     168:	880d883a 	mov	r6,r17
+     16c:	d9000604 	addi	r4,sp,24
+     170:	0000b340 	call	b34 <SHA1_updateInputHashForNextBlock>
+	/**
+	 * run the SHA-1 algorithm
+	 *
+	 * in file "sha1_config.h", you can turn the debug on or off to see the inner computations
+	 */
+	for(uint64_t i = 0; i < packet.m_numOf512bitBlocks; i++)
+     174:	80800044 	addi	r2,r16,1
+     178:	1407803a 	cmpltu	r3,r2,r16
+     17c:	1c63883a 	add	r17,r3,r17
+     180:	1021883a 	mov	r16,r2
+     184:	94801a04 	addi	r18,r18,104
+     188:	003fef06 	br	148 <_gp+0xffff63bc>
+     18c:	1440021e 	bne	r2,r17,198 <main+0xac>
+     190:	d8800617 	ldw	r2,24(sp)
+     194:	80bfee36 	bltu	r16,r2,150 <_gp+0xffff63c4>
+		//takes the output hash of the current 512-bit block and assigns to the input hash of the next 512-bit block
+		SHA1_updateInputHashForNextBlock(&packet, i);
+	}
+
+	//print out the final hash output.
+	SHA1_printFinalHash(&packet, &message);
+     198:	d80b883a 	mov	r5,sp
+     19c:	d9000604 	addi	r4,sp,24
+     1a0:	0000abc0 	call	abc <SHA1_printFinalHash>
+
+	//show the result on LEDs
+	showResultOnLEDs(&packet);
+     1a4:	d9000604 	addi	r4,sp,24
+     1a8:	000006c0 	call	6c <showResultOnLEDs>
+
+	//release memory of the Objects at the end of program.
+	SHA1_freeMemory(&packet);
+     1ac:	d9000604 	addi	r4,sp,24
+     1b0:	00007c00 	call	7c0 <SHA1_freeMemory>
+	MSG_freeMemory(&message);
+     1b4:	d809883a 	mov	r4,sp
+     1b8:	00003c80 	call	3c8 <MSG_freeMemory>
+
+	return 0;
+}
+     1bc:	0005883a 	mov	r2,zero
+     1c0:	dfc00c17 	ldw	ra,48(sp)
+     1c4:	dc800b17 	ldw	r18,44(sp)
+     1c8:	dc400a17 	ldw	r17,40(sp)
+     1cc:	dc000917 	ldw	r16,36(sp)
+     1d0:	dec00d04 	addi	sp,sp,52
+     1d4:	f800283a 	ret
+
+000001d8 <MSG_init>:
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ * \param const char* string : IN - the input string
+ * \param uint32_t stringLength : IN - the input string length
+ */
+void MSG_init(MSG_message_t* message, const char* string, uint32_t stringLength)
+{
+     1d8:	defffd04 	addi	sp,sp,-12
+     1dc:	dc400115 	stw	r17,4(sp)
+     1e0:	dc000015 	stw	r16,0(sp)
+     1e4:	dfc00215 	stw	ra,8(sp)
+     1e8:	2021883a 	mov	r16,r4
+	message->m_stringLength = stringLength;
+     1ec:	21800015 	stw	r6,0(r4)
+     1f0:	20000115 	stw	zero,4(r4)
+
+	//allocate memory for the string
+	// '+1' here to make place for null-termination
+	message->m_string = (char *)malloc((message->m_stringLength +1 ) * sizeof(char));
+     1f4:	31000044 	addi	r4,r6,1
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ * \param const char* string : IN - the input string
+ * \param uint32_t stringLength : IN - the input string length
+ */
+void MSG_init(MSG_message_t* message, const char* string, uint32_t stringLength)
+{
+     1f8:	2823883a 	mov	r17,r5
+	message->m_stringLength = stringLength;
+
+	//allocate memory for the string
+	// '+1' here to make place for null-termination
+	message->m_string = (char *)malloc((message->m_stringLength +1 ) * sizeof(char));
+     1fc:	00012c00 	call	12c0 <malloc>
+     200:	80800215 	stw	r2,8(r16)
+	if(message->m_string == NULL)
+     204:	1000031e 	bne	r2,zero,214 <MSG_init+0x3c>
+	{
+		//TODO: add error handling
+		alt_printf("Memory allocation failed\n");
+     208:	01000034 	movhi	r4,0
+     20c:	21068b04 	addi	r4,r4,6700
+     210:	00016ac0 	call	16ac <alt_printf>
+	}
+
+	//initialize values of message->string by copying the input string into it
+	strcpy(message->m_string, string);
+     214:	81000217 	ldw	r4,8(r16)
+     218:	880b883a 	mov	r5,r17
+     21c:	00015740 	call	1574 <strcpy>
+
+	//an uint32_t variable can hold 4 ASCII characters, null-termination is not considered
+	//=> number of elements in the array is: (stringLegth + 3) / 4
+	message->m_numOfElementsInUint32Array = (uint32_t)((message->m_stringLength + 3) / 4);
+     220:	80800017 	ldw	r2,0(r16)
+     224:	80c00117 	ldw	r3,4(r16)
+     228:	80000415 	stw	zero,16(r16)
+     22c:	110000c4 	addi	r4,r2,3
+     230:	2085803a 	cmpltu	r2,r4,r2
+     234:	10c5883a 	add	r2,r2,r3
+     238:	100497ba 	slli	r2,r2,30
+     23c:	2008d0ba 	srli	r4,r4,2
+     240:	1108b03a 	or	r4,r2,r4
+     244:	81000315 	stw	r4,12(r16)
+
+	//allocate memory to store each character of the string
+	message->m_uint32Array = (uint32_t*)malloc(message->m_numOfElementsInUint32Array * sizeof(uint32_t));
+     248:	2109883a 	add	r4,r4,r4
+     24c:	2109883a 	add	r4,r4,r4
+     250:	00012c00 	call	12c0 <malloc>
+     254:	80800515 	stw	r2,20(r16)
+	if(message->m_uint32Array == NULL)
+     258:	1000031e 	bne	r2,zero,268 <MSG_init+0x90>
+	{
+		//TODO: add error handling
+		alt_printf("Memory allocation failed\n");
+     25c:	01000034 	movhi	r4,0
+     260:	21068b04 	addi	r4,r4,6700
+     264:	00016ac0 	call	16ac <alt_printf>
+	}
+
+	//assigning the characters to the elements of the uint32_t array. in Big Endian
+	for(uint32_t i = 0; i < message->m_stringLength; i++)
+     268:	81800017 	ldw	r6,0(r16)
+     26c:	81c00117 	ldw	r7,4(r16)
+     270:	0009883a 	mov	r4,zero
+     274:	80800517 	ldw	r2,20(r16)
+     278:	38001326 	beq	r7,zero,2c8 <MSG_init+0xf0>
+	{
+		//Initialize to 0 at the start of each group of 4 characters (4 * 8bit = 32 bit)
+		//<=> start of an uint32_t element
+		if(i % 4 == 0)
+     27c:	214000cc 	andi	r5,r4,3
+     280:	2006d0ba 	srli	r3,r4,2
+     284:	2800041e 	bne	r5,zero,298 <MSG_init+0xc0>
+		{
+			//index of new element starts at 0, 4, 8, etc.
+			message->m_uint32Array[i / 4] = 0;
+     288:	18cb883a 	add	r5,r3,r3
+     28c:	294b883a 	add	r5,r5,r5
+     290:	114b883a 	add	r5,r2,r5
+     294:	28000015 	stw	zero,0(r5)
+		}
+
+		message->m_uint32Array[i/4] = (message->m_uint32Array[i/4] << 8) | message->m_string[i];
+     298:	18c7883a 	add	r3,r3,r3
+     29c:	18c7883a 	add	r3,r3,r3
+     2a0:	10c5883a 	add	r2,r2,r3
+     2a4:	80c00217 	ldw	r3,8(r16)
+     2a8:	1907883a 	add	r3,r3,r4
+     2ac:	19400007 	ldb	r5,0(r3)
+     2b0:	10c00017 	ldw	r3,0(r2)
+		//TODO: add error handling
+		alt_printf("Memory allocation failed\n");
+	}
+
+	//assigning the characters to the elements of the uint32_t array. in Big Endian
+	for(uint32_t i = 0; i < message->m_stringLength; i++)
+     2b4:	21000044 	addi	r4,r4,1
+		{
+			//index of new element starts at 0, 4, 8, etc.
+			message->m_uint32Array[i / 4] = 0;
+		}
+
+		message->m_uint32Array[i/4] = (message->m_uint32Array[i/4] << 8) | message->m_string[i];
+     2b8:	1806923a 	slli	r3,r3,8
+     2bc:	28c6b03a 	or	r3,r5,r3
+     2c0:	10c00015 	stw	r3,0(r2)
+     2c4:	003feb06 	br	274 <_gp+0xffff64e8>
+		//TODO: add error handling
+		alt_printf("Memory allocation failed\n");
+	}
+
+	//assigning the characters to the elements of the uint32_t array. in Big Endian
+	for(uint32_t i = 0; i < message->m_stringLength; i++)
+     2c8:	21bfec36 	bltu	r4,r6,27c <_gp+0xffff64f0>
+	}
+
+	//check if there are leading zeros and then perform a left shift
+	uint32_t lastElementIndex = message->m_numOfElementsInUint32Array - 1;
+
+	if ((message->m_uint32Array[lastElementIndex] & 0xFFFFFF00) == 0)
+     2cc:	80c00317 	ldw	r3,12(r16)
+     2d0:	013fc004 	movi	r4,-256
+     2d4:	18ffffc4 	addi	r3,r3,-1
+     2d8:	18c7883a 	add	r3,r3,r3
+     2dc:	18c7883a 	add	r3,r3,r3
+     2e0:	10c5883a 	add	r2,r2,r3
+     2e4:	10c00017 	ldw	r3,0(r2)
+     2e8:	1908703a 	and	r4,r3,r4
+     2ec:	2000021e 	bne	r4,zero,2f8 <MSG_init+0x120>
+	{
+		// Perform left shift if true
+		message->m_uint32Array[lastElementIndex] = message->m_uint32Array[lastElementIndex] << 24;
+     2f0:	1806963a 	slli	r3,r3,24
+     2f4:	00000706 	br	314 <MSG_init+0x13c>
+	}
+	else if ((message->m_uint32Array[lastElementIndex] & 0xFFFF0000) == 0)
+     2f8:	193fffec 	andhi	r4,r3,65535
+     2fc:	2000021e 	bne	r4,zero,308 <MSG_init+0x130>
+	{
+		// Perform left shift if true
+		message->m_uint32Array[lastElementIndex] = message->m_uint32Array[lastElementIndex] << 16;
+     300:	1806943a 	slli	r3,r3,16
+     304:	00000306 	br	314 <MSG_init+0x13c>
+	}
+	else if ((message->m_uint32Array[lastElementIndex] & 0xFF000000) == 0)
+     308:	193fc02c 	andhi	r4,r3,65280
+     30c:	2000021e 	bne	r4,zero,318 <MSG_init+0x140>
+	{
+		// Perform left shift if true
+		message->m_uint32Array[lastElementIndex] = message->m_uint32Array[lastElementIndex] << 8;
+     310:	1806923a 	slli	r3,r3,8
+     314:	10c00015 	stw	r3,0(r2)
+	}
+}
+     318:	dfc00217 	ldw	ra,8(sp)
+     31c:	dc400117 	ldw	r17,4(sp)
+     320:	dc000017 	ldw	r16,0(sp)
+     324:	dec00304 	addi	sp,sp,12
+     328:	f800283a 	ret
+
+0000032c <MSG_printUint32Representation>:
+ * \brief function to print out the 32-bit representation of the string.
+ *
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void MSG_printUint32Representation(MSG_message_t* message)
+{
+     32c:	defffb04 	addi	sp,sp,-20
+	alt_printf("The string \"%s\" represented as an array of uint32_t elements: \n", message->m_string);
+     330:	21400217 	ldw	r5,8(r4)
+ * \brief function to print out the 32-bit representation of the string.
+ *
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void MSG_printUint32Representation(MSG_message_t* message)
+{
+     334:	dc400115 	stw	r17,4(sp)
+     338:	2023883a 	mov	r17,r4
+	alt_printf("The string \"%s\" represented as an array of uint32_t elements: \n", message->m_string);
+     33c:	01000034 	movhi	r4,0
+     340:	21069204 	addi	r4,r4,6728
+ * \brief function to print out the 32-bit representation of the string.
+ *
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void MSG_printUint32Representation(MSG_message_t* message)
+{
+     344:	dcc00315 	stw	r19,12(sp)
+     348:	dc800215 	stw	r18,8(sp)
+     34c:	dc000015 	stw	r16,0(sp)
+     350:	dfc00415 	stw	ra,16(sp)
+	alt_printf("The string \"%s\" represented as an array of uint32_t elements: \n", message->m_string);
+
+	for(uint64_t i = 0; i < message->m_numOfElementsInUint32Array; i++)
+     354:	0027883a 	mov	r19,zero
+ *
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void MSG_printUint32Representation(MSG_message_t* message)
+{
+	alt_printf("The string \"%s\" represented as an array of uint32_t elements: \n", message->m_string);
+     358:	00016ac0 	call	16ac <alt_printf>
+
+	for(uint64_t i = 0; i < message->m_numOfElementsInUint32Array; i++)
+     35c:	0021883a 	mov	r16,zero
+     360:	0025883a 	mov	r18,zero
+     364:	88800417 	ldw	r2,16(r17)
+     368:	90800c2e 	bgeu	r18,r2,39c <MSG_printUint32Representation+0x70>
+	{
+		//this API is quite strange.. I cannot print the index, if I do, things will mess up!
+		alt_printf("- word[] = 0x%x \n", message->m_uint32Array[i]);
+     36c:	88800517 	ldw	r2,20(r17)
+     370:	01000034 	movhi	r4,0
+     374:	2106a204 	addi	r4,r4,6792
+     378:	14c5883a 	add	r2,r2,r19
+     37c:	11400017 	ldw	r5,0(r2)
+     380:	9cc00104 	addi	r19,r19,4
+     384:	00016ac0 	call	16ac <alt_printf>
+ */
+void MSG_printUint32Representation(MSG_message_t* message)
+{
+	alt_printf("The string \"%s\" represented as an array of uint32_t elements: \n", message->m_string);
+
+	for(uint64_t i = 0; i < message->m_numOfElementsInUint32Array; i++)
+     388:	80800044 	addi	r2,r16,1
+     38c:	1407803a 	cmpltu	r3,r2,r16
+     390:	1ca5883a 	add	r18,r3,r18
+     394:	1021883a 	mov	r16,r2
+     398:	003ff206 	br	364 <_gp+0xffff65d8>
+     39c:	1480021e 	bne	r2,r18,3a8 <MSG_printUint32Representation+0x7c>
+     3a0:	88800317 	ldw	r2,12(r17)
+     3a4:	80bff136 	bltu	r16,r2,36c <_gp+0xffff65e0>
+	{
+		//this API is quite strange.. I cannot print the index, if I do, things will mess up!
+		alt_printf("- word[] = 0x%x \n", message->m_uint32Array[i]);
+	}
+	alt_putchar('\n');
+     3a8:	01000284 	movi	r4,10
+}
+     3ac:	dfc00417 	ldw	ra,16(sp)
+     3b0:	dcc00317 	ldw	r19,12(sp)
+     3b4:	dc800217 	ldw	r18,8(sp)
+     3b8:	dc400117 	ldw	r17,4(sp)
+     3bc:	dc000017 	ldw	r16,0(sp)
+     3c0:	dec00504 	addi	sp,sp,20
+	for(uint64_t i = 0; i < message->m_numOfElementsInUint32Array; i++)
+	{
+		//this API is quite strange.. I cannot print the index, if I do, things will mess up!
+		alt_printf("- word[] = 0x%x \n", message->m_uint32Array[i]);
+	}
+	alt_putchar('\n');
+     3c4:	000181c1 	jmpi	181c <alt_putchar>
+
+000003c8 <MSG_freeMemory>:
+ * \brief free the memory allocated for the member of the objects in the argument list.
+ *
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void MSG_freeMemory(MSG_message_t* message)
+{
+     3c8:	defffe04 	addi	sp,sp,-8
+     3cc:	dc000015 	stw	r16,0(sp)
+     3d0:	2021883a 	mov	r16,r4
+	if(message->m_string != NULL)
+     3d4:	21000217 	ldw	r4,8(r4)
+ * \brief free the memory allocated for the member of the objects in the argument list.
+ *
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void MSG_freeMemory(MSG_message_t* message)
+{
+     3d8:	dfc00115 	stw	ra,4(sp)
+	if(message->m_string != NULL)
+     3dc:	20000226 	beq	r4,zero,3e8 <MSG_freeMemory+0x20>
+	{
+		free(message->m_string);
+     3e0:	00012d40 	call	12d4 <free>
+		message->m_string = NULL;
+     3e4:	80000215 	stw	zero,8(r16)
+	}
+
+	if(message->m_uint32Array != NULL)
+     3e8:	81000517 	ldw	r4,20(r16)
+     3ec:	20000226 	beq	r4,zero,3f8 <MSG_freeMemory+0x30>
+	{
+		free(message->m_uint32Array);
+     3f0:	00012d40 	call	12d4 <free>
+		message->m_uint32Array = NULL;
+     3f4:	80000515 	stw	zero,20(r16)
+	}
+}
+     3f8:	dfc00117 	ldw	ra,4(sp)
+     3fc:	dc000017 	ldw	r16,0(sp)
+     400:	dec00204 	addi	sp,sp,8
+     404:	f800283a 	ret
+
+00000408 <SHA1_init>:
+	 * - Theoretically, max number of bits of a message in a single 512-bit block is 447 bit.
+	 * - However the real limit is 440 bit because each ASCII character has 8 bits.
+	 * => If the input string contains more than 55 ASCII characters, we need more 512-bit block(s).
+	 */
+	//calculate how many blocks of 512bit do we need
+	packet->m_numOf512bitBlocks = (message->m_stringLength + (SHA1_MAX_ASCII_CHARS_PER_BLOCK - 1)) / SHA1_MAX_ASCII_CHARS_PER_BLOCK;
+     408:	28800017 	ldw	r2,0(r5)
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_init(SHA1_packet_t* packet, MSG_message_t* message)
+{
+     40c:	defff504 	addi	sp,sp,-44
+     410:	dc800315 	stw	r18,12(sp)
+     414:	2825883a 	mov	r18,r5
+	 * - Theoretically, max number of bits of a message in a single 512-bit block is 447 bit.
+	 * - However the real limit is 440 bit because each ASCII character has 8 bits.
+	 * => If the input string contains more than 55 ASCII characters, we need more 512-bit block(s).
+	 */
+	//calculate how many blocks of 512bit do we need
+	packet->m_numOf512bitBlocks = (message->m_stringLength + (SHA1_MAX_ASCII_CHARS_PER_BLOCK - 1)) / SHA1_MAX_ASCII_CHARS_PER_BLOCK;
+     418:	29400117 	ldw	r5,4(r5)
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_init(SHA1_packet_t* packet, MSG_message_t* message)
+{
+     41c:	dc000115 	stw	r16,4(sp)
+     420:	2021883a 	mov	r16,r4
+	 * - Theoretically, max number of bits of a message in a single 512-bit block is 447 bit.
+	 * - However the real limit is 440 bit because each ASCII character has 8 bits.
+	 * => If the input string contains more than 55 ASCII characters, we need more 512-bit block(s).
+	 */
+	//calculate how many blocks of 512bit do we need
+	packet->m_numOf512bitBlocks = (message->m_stringLength + (SHA1_MAX_ASCII_CHARS_PER_BLOCK - 1)) / SHA1_MAX_ASCII_CHARS_PER_BLOCK;
+     424:	11000d84 	addi	r4,r2,54
+     428:	2085803a 	cmpltu	r2,r4,r2
+     42c:	000f883a 	mov	r7,zero
+     430:	114b883a 	add	r5,r2,r5
+     434:	01800dc4 	movi	r6,55
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_init(SHA1_packet_t* packet, MSG_message_t* message)
+{
+     438:	dfc00a15 	stw	ra,40(sp)
+     43c:	dcc00415 	stw	r19,16(sp)
+     440:	dc400215 	stw	r17,8(sp)
+     444:	df000915 	stw	fp,36(sp)
+     448:	ddc00815 	stw	r23,32(sp)
+     44c:	dd800715 	stw	r22,28(sp)
+     450:	dd400615 	stw	r21,24(sp)
+     454:	dd000515 	stw	r20,20(sp)
+	 * - Theoretically, max number of bits of a message in a single 512-bit block is 447 bit.
+	 * - However the real limit is 440 bit because each ASCII character has 8 bits.
+	 * => If the input string contains more than 55 ASCII characters, we need more 512-bit block(s).
+	 */
+	//calculate how many blocks of 512bit do we need
+	packet->m_numOf512bitBlocks = (message->m_stringLength + (SHA1_MAX_ASCII_CHARS_PER_BLOCK - 1)) / SHA1_MAX_ASCII_CHARS_PER_BLOCK;
+     458:	0000b940 	call	b94 <__udivdi3>
+
+	//allocate memory based on how many 512-bit blocks are needed.
+	packet->m_512bit_block = (SHA1_512bit_block_t*)malloc(packet->m_numOf512bitBlocks * sizeof(SHA1_512bit_block_t));
+     45c:	11001a24 	muli	r4,r2,104
+	 * - Theoretically, max number of bits of a message in a single 512-bit block is 447 bit.
+	 * - However the real limit is 440 bit because each ASCII character has 8 bits.
+	 * => If the input string contains more than 55 ASCII characters, we need more 512-bit block(s).
+	 */
+	//calculate how many blocks of 512bit do we need
+	packet->m_numOf512bitBlocks = (message->m_stringLength + (SHA1_MAX_ASCII_CHARS_PER_BLOCK - 1)) / SHA1_MAX_ASCII_CHARS_PER_BLOCK;
+     460:	80c00115 	stw	r3,4(r16)
+     464:	80800015 	stw	r2,0(r16)
+     468:	1827883a 	mov	r19,r3
+     46c:	1023883a 	mov	r17,r2
+
+	//allocate memory based on how many 512-bit blocks are needed.
+	packet->m_512bit_block = (SHA1_512bit_block_t*)malloc(packet->m_numOf512bitBlocks * sizeof(SHA1_512bit_block_t));
+     470:	00012c00 	call	12c0 <malloc>
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+	{
+		if(blockIndex == 0) //if it is the first ever 512bit block, we apply magic numbers (FIPS PUB 180-1).
+		{
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_A] = SHA1_INIT_HASH_A;
+     474:	01d9d174 	movhi	r7,26437
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_B] = SHA1_INIT_HASH_B;
+     478:	023bf3b4 	movhi	r8,61390
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_C] = SHA1_INIT_HASH_C;
+     47c:	02662ef4 	movhi	r9,39099
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_D] = SHA1_INIT_HASH_D;
+     480:	02840cb4 	movhi	r10,4146
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_E] = SHA1_INIT_HASH_E;
+     484:	02f0f4f4 	movhi	r11,50131
+	 */
+	//calculate how many blocks of 512bit do we need
+	packet->m_numOf512bitBlocks = (message->m_stringLength + (SHA1_MAX_ASCII_CHARS_PER_BLOCK - 1)) / SHA1_MAX_ASCII_CHARS_PER_BLOCK;
+
+	//allocate memory based on how many 512-bit blocks are needed.
+	packet->m_512bit_block = (SHA1_512bit_block_t*)malloc(packet->m_numOf512bitBlocks * sizeof(SHA1_512bit_block_t));
+     488:	80800215 	stw	r2,8(r16)
+     48c:	000b883a 	mov	r5,zero
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initInputHash(SHA1_packet_t* packet)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     490:	0007883a 	mov	r3,zero
+     494:	0009883a 	mov	r4,zero
+	{
+		if(blockIndex == 0) //if it is the first ever 512bit block, we apply magic numbers (FIPS PUB 180-1).
+		{
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_A] = SHA1_INIT_HASH_A;
+     498:	39c8c044 	addi	r7,r7,8961
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_B] = SHA1_INIT_HASH_B;
+     49c:	422ae244 	addi	r8,r8,-21623
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_C] = SHA1_INIT_HASH_C;
+     4a0:	4a773f84 	addi	r9,r9,-8962
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_D] = SHA1_INIT_HASH_D;
+     4a4:	52951d84 	addi	r10,r10,21622
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_E] = SHA1_INIT_HASH_E;
+     4a8:	5af87c04 	addi	r11,r11,-7696
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initInputHash(SHA1_packet_t* packet)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     4ac:	88c01526 	beq	r17,r3,504 <SHA1_init+0xfc>
+	{
+		if(blockIndex == 0) //if it is the first ever 512bit block, we apply magic numbers (FIPS PUB 180-1).
+     4b0:	190cb03a 	or	r6,r3,r4
+     4b4:	80800217 	ldw	r2,8(r16)
+     4b8:	3000061e 	bne	r6,zero,4d4 <SHA1_init+0xcc>
+		{
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_A] = SHA1_INIT_HASH_A;
+     4bc:	11c01015 	stw	r7,64(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_B] = SHA1_INIT_HASH_B;
+     4c0:	12001115 	stw	r8,68(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_C] = SHA1_INIT_HASH_C;
+     4c4:	12401215 	stw	r9,72(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_D] = SHA1_INIT_HASH_D;
+     4c8:	12801315 	stw	r10,76(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_E] = SHA1_INIT_HASH_E;
+     4cc:	12c01415 	stw	r11,80(r2)
+     4d0:	00000606 	br	4ec <SHA1_init+0xe4>
+		}
+		else //if it is the 2nd block and so on, just apply 0. They will be modified later.
+		{
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_A] = 0;
+     4d4:	1145883a 	add	r2,r2,r5
+     4d8:	10001015 	stw	zero,64(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_B] = 0;
+     4dc:	10001115 	stw	zero,68(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_C] = 0;
+     4e0:	10001215 	stw	zero,72(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_D] = 0;
+     4e4:	10001315 	stw	zero,76(r2)
+			packet->m_512bit_block[blockIndex].m_inputHash[SHA1_HASH_E] = 0;
+     4e8:	10001415 	stw	zero,80(r2)
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initInputHash(SHA1_packet_t* packet)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     4ec:	18800044 	addi	r2,r3,1
+     4f0:	10cd803a 	cmpltu	r6,r2,r3
+     4f4:	3109883a 	add	r4,r6,r4
+     4f8:	1007883a 	mov	r3,r2
+     4fc:	29401a04 	addi	r5,r5,104
+     500:	003fea06 	br	4ac <_gp+0xffff6720>
+     504:	993fea1e 	bne	r19,r4,4b0 <_gp+0xffff6724>
+     508:	000b883a 	mov	r5,zero
+     50c:	0007883a 	mov	r3,zero
+     510:	0009883a 	mov	r4,zero
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initOutputHash(SHA1_packet_t* packet)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     514:	88c00d26 	beq	r17,r3,54c <SHA1_init+0x144>
+	{
+		//initialize the 5 output hash words of each 512bit block to 0. They will be modified later.
+		packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_A] = 0;
+     518:	80800217 	ldw	r2,8(r16)
+     51c:	1145883a 	add	r2,r2,r5
+     520:	10001515 	stw	zero,84(r2)
+		packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_B] = 0;
+     524:	10001615 	stw	zero,88(r2)
+		packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_C] = 0;
+     528:	10001715 	stw	zero,92(r2)
+		packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_D] = 0;
+     52c:	10001815 	stw	zero,96(r2)
+		packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_E] = 0;
+     530:	10001915 	stw	zero,100(r2)
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initOutputHash(SHA1_packet_t* packet)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     534:	18800044 	addi	r2,r3,1
+     538:	10cd803a 	cmpltu	r6,r2,r3
+     53c:	3109883a 	add	r4,r6,r4
+     540:	1007883a 	mov	r3,r2
+     544:	29401a04 	addi	r5,r5,104
+     548:	003ff206 	br	514 <_gp+0xffff6788>
+     54c:	993ff21e 	bne	r19,r4,518 <_gp+0xffff678c>
+     550:	0009883a 	mov	r4,zero
+     554:	0007883a 	mov	r3,zero
+     558:	000b883a 	mov	r5,zero
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initWords(SHA1_packet_t* packet)
+{
+	//initialize the 16 words of each 512bit block to 0. They will be modified later.
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     55c:	88c0101e 	bne	r17,r3,5a0 <SHA1_init+0x198>
+     560:	99400f1e 	bne	r19,r5,5a0 <SHA1_init+0x198>
+												   MSG_message_t* message,
+												   uint64_t blockIndex,
+												   uint8_t* wordIndex)
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+     564:	8bbfffc4 	addi	r14,r17,-1
+	//calculate the next-to-last word index and last word index of the last 512-bit block.
+	uint8_t nextToLastWordIndex = SHA1_TOTAL_WORDS_PER_BLOCK - 2;
+	uint8_t lastWordIndex 		= SHA1_TOTAL_WORDS_PER_BLOCK - 1;
+
+	//assign the first 32 bits of "messageLengthInBits" to the next-to-last word index
+	packet->m_512bit_block[lastBlockIndex].m_word[nextToLastWordIndex] = (uint32_t)(messageLengthInBits >> 32);
+     568:	70801a24 	muli	r2,r14,104
+												   MSG_message_t* message,
+												   uint64_t blockIndex,
+												   uint8_t* wordIndex)
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+     56c:	745b403a 	cmpgeu	r13,r14,r17
+	 * e.g.,           0x61000000
+	 *  -> do Padding: 0x  800000
+	 *  --------------------------
+	 *  -> gives:	   0x61800000
+	 */
+	else if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0x00FFFFFF) == 0)
+     570:	05404034 	movhi	r21,256
+	//calculate the next-to-last word index and last word index of the last 512-bit block.
+	uint8_t nextToLastWordIndex = SHA1_TOTAL_WORDS_PER_BLOCK - 2;
+	uint8_t lastWordIndex 		= SHA1_TOTAL_WORDS_PER_BLOCK - 1;
+
+	//assign the first 32 bits of "messageLengthInBits" to the next-to-last word index
+	packet->m_512bit_block[lastBlockIndex].m_word[nextToLastWordIndex] = (uint32_t)(messageLengthInBits >> 32);
+     574:	d8800015 	stw	r2,0(sp)
+     578:	d1e04003 	ldbu	r7,-32512(gp)
+												   MSG_message_t* message,
+												   uint64_t blockIndex,
+												   uint8_t* wordIndex)
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+     57c:	9b5bc83a 	sub	r13,r19,r13
+	//calculate the next-to-last word index and last word index of the last 512-bit block.
+	uint8_t nextToLastWordIndex = SHA1_TOTAL_WORDS_PER_BLOCK - 2;
+	uint8_t lastWordIndex 		= SHA1_TOTAL_WORDS_PER_BLOCK - 1;
+
+	//assign the first 32 bits of "messageLengthInBits" to the next-to-last word index
+	packet->m_512bit_block[lastBlockIndex].m_word[nextToLastWordIndex] = (uint32_t)(messageLengthInBits >> 32);
+     580:	0019883a 	mov	r12,zero
+     584:	0005883a 	mov	r2,zero
+     588:	0007883a 	mov	r3,zero
+     58c:	0011883a 	mov	r8,zero
+	 * e.g.,           0x61000000
+	 *  -> do Padding: 0x  800000
+	 *  --------------------------
+	 *  -> gives:	   0x61800000
+	 */
+	else if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0x00FFFFFF) == 0)
+     590:	ad7fffc4 	addi	r21,r21,-1
+		 * #special case: start index has exceeded its limit,
+		 *  which means the current 512-bit block has run out of words for us to
+		 *  append the Padding.
+		 *  => we end our function here, then in the next iteration, startIndex will start from 0
+		 */
+		if(startIndex == SHA1_TOTAL_WORDS_PER_BLOCK)
+     594:	05800404 	movi	r22,16
+	 *  --------------------------
+	 *  -> gives:	   0x80000000
+	 */
+	if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0xFFFFFFFF) == 0)
+	{
+		packet->m_512bit_block[blockIndex].m_word[startIndex] = packet->m_512bit_block[blockIndex].m_word[startIndex] | 0x80000000;
+     598:	05e00034 	movhi	r23,32768
+     59c:	00002d06 	br	654 <SHA1_init+0x24c>
+	//initialize the 16 words of each 512bit block to 0. They will be modified later.
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+	{
+		for(uint8_t wordIndex = 0; wordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; wordIndex++)
+		{
+			packet->m_512bit_block[blockIndex].m_word[wordIndex] = 0;
+     5a0:	80800217 	ldw	r2,8(r16)
+     5a4:	1105883a 	add	r2,r2,r4
+     5a8:	11801004 	addi	r6,r2,64
+     5ac:	10000015 	stw	zero,0(r2)
+     5b0:	10800104 	addi	r2,r2,4
+static void SHA1_initWords(SHA1_packet_t* packet)
+{
+	//initialize the 16 words of each 512bit block to 0. They will be modified later.
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+	{
+		for(uint8_t wordIndex = 0; wordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; wordIndex++)
+     5b4:	30bffd1e 	bne	r6,r2,5ac <_gp+0xffff6820>
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+static void SHA1_initWords(SHA1_packet_t* packet)
+{
+	//initialize the 16 words of each 512bit block to 0. They will be modified later.
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     5b8:	18800044 	addi	r2,r3,1
+     5bc:	10cd803a 	cmpltu	r6,r2,r3
+     5c0:	314b883a 	add	r5,r6,r5
+     5c4:	1007883a 	mov	r3,r2
+     5c8:	21001a04 	addi	r4,r4,104
+     5cc:	003fe306 	br	55c <_gp+0xffff67d0>
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+static void SHA1_preProcessing(SHA1_packet_t* packet, MSG_message_t* message)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     5d0:	9a006c26 	beq	r19,r8,784 <SHA1_init+0x37c>
+										 uint64_t blockIndex,
+										 uint8_t* wordIndex,
+										 uint64_t* uint32ArrayIndex)
+{
+	//when (*uint32ArrayIndex) has reached its limit, we don't append ASCII characters anymore
+	if((*uint32ArrayIndex) >= message->m_numOfElementsInUint32Array)
+     5d4:	d1604217 	ldw	r5,-32504(gp)
+     5d8:	91800417 	ldw	r6,16(r18)
+     5dc:	d7e04117 	ldw	ra,-32508(gp)
+     5e0:	92c00317 	ldw	r11,12(r18)
+     5e4:	1a400044 	addi	r9,r3,1
+     5e8:	29801c2e 	bgeu	r5,r6,65c <SHA1_init+0x254>
+     5ec:	48d5803a 	cmpltu	r10,r9,r3
+     5f0:	5215883a 	add	r10,r10,r8
+     5f4:	4808d73a 	srli	r4,r9,28
+     5f8:	5014913a 	slli	r10,r10,4
+     5fc:	481e913a 	slli	r15,r9,4
+     600:	2288b03a 	or	r4,r4,r10
+     604:	31001936 	bltu	r6,r4,66c <SHA1_init+0x264>
+     608:	21801726 	beq	r4,r6,668 <SHA1_init+0x260>
+     60c:	f815883a 	mov	r10,ra
+     610:	0017883a 	mov	r11,zero
+     614:	0029883a 	mov	r20,zero
+     618:	580d883a 	mov	r6,r11
+		// '+1' here because "uint32ArrayLimit" starts from '1', while "blockIndex" starts from '0'.
+		uint32ArrayLimit = ((blockIndex + 1) * SHA1_TOTAL_WORDS_PER_BLOCK);
+	}
+
+	//append the ASCII characters into the words of the current 512-bit block.
+	for(; (*uint32ArrayIndex) < uint32ArrayLimit; (*uint32ArrayIndex)++)
+     61c:	29001736 	bltu	r5,r4,67c <SHA1_init+0x274>
+     620:	21401526 	beq	r4,r5,678 <SHA1_init+0x270>
+     624:	a5003fcc 	andi	r20,r20,255
+     628:	a0000226 	beq	r20,zero,634 <SHA1_init+0x22c>
+     62c:	d2a04115 	stw	r10,-32508(gp)
+     630:	d1604215 	stw	r5,-32504(gp)
+{
+	//this flag is used so that the padding can only be done ONCE.
+	static boolean_t paddingFlag = FALSE;
+
+	//if the 512-bit block is already padded then we move on
+	if(TRUE == paddingFlag)
+     634:	39003fcc 	andi	r4,r7,255
+     638:	01400044 	movi	r5,1
+     63c:	2140251e 	bne	r4,r5,6d4 <SHA1_init+0x2cc>
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	//if this block index is not the index of the last 512-bit block => we bypass this function
+	if(blockIndex < lastBlockIndex)
+     640:	4340422e 	bgeu	r8,r13,74c <SHA1_init+0x344>
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+static void SHA1_preProcessing(SHA1_packet_t* packet, MSG_message_t* message)
+{
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     644:	48c9803a 	cmpltu	r4,r9,r3
+     648:	2211883a 	add	r8,r4,r8
+     64c:	4807883a 	mov	r3,r9
+     650:	63001a04 	addi	r12,r12,104
+     654:	88ffdf1e 	bne	r17,r3,5d4 <_gp+0xffff6848>
+     658:	003fdd06 	br	5d0 <_gp+0xffff6844>
+										 uint64_t blockIndex,
+										 uint8_t* wordIndex,
+										 uint64_t* uint32ArrayIndex)
+{
+	//when (*uint32ArrayIndex) has reached its limit, we don't append ASCII characters anymore
+	if((*uint32ArrayIndex) >= message->m_numOfElementsInUint32Array)
+     65c:	31401b1e 	bne	r6,r5,6cc <SHA1_init+0x2c4>
+     660:	faffe236 	bltu	ra,r11,5ec <_gp+0xffff6860>
+     664:	00001906 	br	6cc <SHA1_init+0x2c4>
+     668:	5bffe82e 	bgeu	r11,r15,60c <_gp+0xffff6880>
+     66c:	581f883a 	mov	r15,r11
+     670:	3009883a 	mov	r4,r6
+     674:	003fe506 	br	60c <_gp+0xffff6880>
+		// '+1' here because "uint32ArrayLimit" starts from '1', while "blockIndex" starts from '0'.
+		uint32ArrayLimit = ((blockIndex + 1) * SHA1_TOTAL_WORDS_PER_BLOCK);
+	}
+
+	//append the ASCII characters into the words of the current 512-bit block.
+	for(; (*uint32ArrayIndex) < uint32ArrayLimit; (*uint32ArrayIndex)++)
+     678:	53ffea2e 	bgeu	r10,r15,624 <_gp+0xffff6898>
+	{
+		packet->m_512bit_block[blockIndex].m_word[(*wordIndex)] = message->m_uint32Array[(*uint32ArrayIndex)];
+     67c:	95000517 	ldw	r20,20(r18)
+     680:	5fcd883a 	add	r6,r11,ra
+     684:	318d883a 	add	r6,r6,r6
+     688:	318d883a 	add	r6,r6,r6
+     68c:	a18d883a 	add	r6,r20,r6
+     690:	85000217 	ldw	r20,8(r16)
+     694:	37000017 	ldw	fp,0(r6)
+     698:	59803fcc 	andi	r6,r11,255
+     69c:	318d883a 	add	r6,r6,r6
+     6a0:	a329883a 	add	r20,r20,r12
+     6a4:	318d883a 	add	r6,r6,r6
+     6a8:	a18d883a 	add	r6,r20,r6
+     6ac:	37000015 	stw	fp,0(r6)
+		// '+1' here because "uint32ArrayLimit" starts from '1', while "blockIndex" starts from '0'.
+		uint32ArrayLimit = ((blockIndex + 1) * SHA1_TOTAL_WORDS_PER_BLOCK);
+	}
+
+	//append the ASCII characters into the words of the current 512-bit block.
+	for(; (*uint32ArrayIndex) < uint32ArrayLimit; (*uint32ArrayIndex)++)
+     6b0:	51800044 	addi	r6,r10,1
+     6b4:	32a9803a 	cmpltu	r20,r6,r10
+     6b8:	a14b883a 	add	r5,r20,r5
+     6bc:	3015883a 	mov	r10,r6
+     6c0:	5ac00044 	addi	r11,r11,1
+     6c4:	05000044 	movi	r20,1
+     6c8:	003fd306 	br	618 <_gp+0xffff688c>
+{
+	//when (*uint32ArrayIndex) has reached its limit, we don't append ASCII characters anymore
+	if((*uint32ArrayIndex) >= message->m_numOfElementsInUint32Array)
+	{
+		//increment the (*wordIndex) to do the next step, which is append padding.
+		(*wordIndex)++;
+     6cc:	01800044 	movi	r6,1
+     6d0:	003fd806 	br	634 <_gp+0xffff68a8>
+     6d4:	31803fcc 	andi	r6,r6,255
+	 * e.g.,           0x00000000
+	 *  -> do Padding: 0x80000000
+	 *  --------------------------
+	 *  -> gives:	   0x80000000
+	 */
+	if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0xFFFFFFFF) == 0)
+     6d8:	81000217 	ldw	r4,8(r16)
+     6dc:	318b883a 	add	r5,r6,r6
+     6e0:	294b883a 	add	r5,r5,r5
+     6e4:	2b0b883a 	add	r5,r5,r12
+     6e8:	2149883a 	add	r4,r4,r5
+     6ec:	217fff17 	ldw	r5,-4(r4)
+     6f0:	2800021e 	bne	r5,zero,6fc <SHA1_init+0x2f4>
+	{
+		packet->m_512bit_block[blockIndex].m_word[startIndex] = packet->m_512bit_block[blockIndex].m_word[startIndex] | 0x80000000;
+     6f4:	25ffff15 	stw	r23,-4(r4)
+     6f8:	00001106 	br	740 <SHA1_init+0x338>
+	 * e.g.,           0x61000000
+	 *  -> do Padding: 0x  800000
+	 *  --------------------------
+	 *  -> gives:	   0x61800000
+	 */
+	else if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0x00FFFFFF) == 0)
+     6fc:	2d54703a 	and	r10,r5,r21
+     700:	5000021e 	bne	r10,zero,70c <SHA1_init+0x304>
+	{
+		packet->m_512bit_block[blockIndex].m_word[startIndex] = packet->m_512bit_block[blockIndex].m_word[startIndex] | 0x800000;
+     704:	29402034 	orhi	r5,r5,128
+     708:	00000706 	br	728 <SHA1_init+0x320>
+	 * e.g.,           0x61610000
+	 *  -> do Padding: 0x    8000
+	 *  --------------------------
+	 *  -> gives:	   0x61618000
+	 */
+	else if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0x0000FFFF) == 0)
+     70c:	2abfffcc 	andi	r10,r5,65535
+     710:	5000021e 	bne	r10,zero,71c <SHA1_init+0x314>
+	{
+		packet->m_512bit_block[blockIndex].m_word[startIndex] = packet->m_512bit_block[blockIndex].m_word[startIndex] | 0x8000;
+     714:	29600014 	ori	r5,r5,32768
+     718:	00000306 	br	728 <SHA1_init+0x320>
+	 * e.g.,           0x61616100
+	 *  -> do Padding: 0x      80
+	 *  --------------------------
+	 *  -> gives:	   0x61616180
+	 */
+	else if ((packet->m_512bit_block[blockIndex].m_word[startIndex] & 0x000000FF) == 0)
+     71c:	2a803fcc 	andi	r10,r5,255
+     720:	5000031e 	bne	r10,zero,730 <SHA1_init+0x328>
+	{
+		packet->m_512bit_block[blockIndex].m_word[startIndex] = packet->m_512bit_block[blockIndex].m_word[startIndex] | 0x80;
+     724:	29402014 	ori	r5,r5,128
+     728:	217fff15 	stw	r5,-4(r4)
+     72c:	00000406 	br	740 <SHA1_init+0x338>
+		 * #special case: start index has exceeded its limit,
+		 *  which means the current 512-bit block has run out of words for us to
+		 *  append the Padding.
+		 *  => we end our function here, then in the next iteration, startIndex will start from 0
+		 */
+		if(startIndex == SHA1_TOTAL_WORDS_PER_BLOCK)
+     730:	35bfc326 	beq	r6,r22,640 <_gp+0xffff68b4>
+		{
+			return;
+		}
+
+		//do the padding with 0x80000000 as mentioned above
+		packet->m_512bit_block[blockIndex].m_word[startIndex] = packet->m_512bit_block[blockIndex].m_word[startIndex] | 0x80000000;
+     734:	20800017 	ldw	r2,0(r4)
+     738:	10a00034 	orhi	r2,r2,32768
+     73c:	20800015 	stw	r2,0(r4)
+     740:	00800044 	movi	r2,1
+
+		//set the flag to TRUE so that this Padding code will never be executed the 2nd time.
+		paddingFlag = TRUE;
+     744:	100f883a 	mov	r7,r2
+     748:	003fbd06 	br	640 <_gp+0xffff68b4>
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	//if this block index is not the index of the last 512-bit block => we bypass this function
+	if(blockIndex < lastBlockIndex)
+     74c:	6a00011e 	bne	r13,r8,754 <SHA1_init+0x34c>
+     750:	1bbfbc36 	bltu	r3,r14,644 <_gp+0xffff68b8>
+	{
+		return;
+	}
+
+	//calculate number of bits of the original messgage
+	uint64_t messageLengthInBits = ( (message->m_stringLength) * 8 );
+     754:	91400017 	ldw	r5,0(r18)
+     758:	91000117 	ldw	r4,4(r18)
+	//calculate the next-to-last word index and last word index of the last 512-bit block.
+	uint8_t nextToLastWordIndex = SHA1_TOTAL_WORDS_PER_BLOCK - 2;
+	uint8_t lastWordIndex 		= SHA1_TOTAL_WORDS_PER_BLOCK - 1;
+
+	//assign the first 32 bits of "messageLengthInBits" to the next-to-last word index
+	packet->m_512bit_block[lastBlockIndex].m_word[nextToLastWordIndex] = (uint32_t)(messageLengthInBits >> 32);
+     75c:	da800017 	ldw	r10,0(sp)
+	{
+		return;
+	}
+
+	//calculate number of bits of the original messgage
+	uint64_t messageLengthInBits = ( (message->m_stringLength) * 8 );
+     760:	280cd77a 	srli	r6,r5,29
+     764:	200890fa 	slli	r4,r4,3
+     768:	3108b03a 	or	r4,r6,r4
+     76c:	280c90fa 	slli	r6,r5,3
+	//calculate the next-to-last word index and last word index of the last 512-bit block.
+	uint8_t nextToLastWordIndex = SHA1_TOTAL_WORDS_PER_BLOCK - 2;
+	uint8_t lastWordIndex 		= SHA1_TOTAL_WORDS_PER_BLOCK - 1;
+
+	//assign the first 32 bits of "messageLengthInBits" to the next-to-last word index
+	packet->m_512bit_block[lastBlockIndex].m_word[nextToLastWordIndex] = (uint32_t)(messageLengthInBits >> 32);
+     770:	81400217 	ldw	r5,8(r16)
+     774:	2a8b883a 	add	r5,r5,r10
+     778:	29000e15 	stw	r4,56(r5)
+
+	//assign the second 32 bits of "messageLengthInBits" to last word index
+	packet->m_512bit_block[lastBlockIndex].m_word[lastWordIndex] = (uint32_t)(messageLengthInBits);
+     77c:	29800f15 	stw	r6,60(r5)
+     780:	003fb006 	br	644 <_gp+0xffff68b8>
+     784:	10803fcc 	andi	r2,r2,255
+     788:	10000126 	beq	r2,zero,790 <SHA1_init+0x388>
+     78c:	d1e04005 	stb	r7,-32512(gp)
+	//initialize the 16 words of each 512bit block to 0. They will be modified later.
+	SHA1_initWords(packet);
+
+	//Pre-Processing step
+	SHA1_preProcessing(packet, message);
+}
+     790:	dfc00a17 	ldw	ra,40(sp)
+     794:	df000917 	ldw	fp,36(sp)
+     798:	ddc00817 	ldw	r23,32(sp)
+     79c:	dd800717 	ldw	r22,28(sp)
+     7a0:	dd400617 	ldw	r21,24(sp)
+     7a4:	dd000517 	ldw	r20,20(sp)
+     7a8:	dcc00417 	ldw	r19,16(sp)
+     7ac:	dc800317 	ldw	r18,12(sp)
+     7b0:	dc400217 	ldw	r17,8(sp)
+     7b4:	dc000117 	ldw	r16,4(sp)
+     7b8:	dec00b04 	addi	sp,sp,44
+     7bc:	f800283a 	ret
+
+000007c0 <SHA1_freeMemory>:
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+void SHA1_freeMemory(SHA1_packet_t* packet)
+{
+	if (packet->m_512bit_block != NULL)
+     7c0:	20800217 	ldw	r2,8(r4)
+     7c4:	10000a26 	beq	r2,zero,7f0 <SHA1_freeMemory+0x30>
+ * \brief free the memory allocated for the member of the objects in the argument list.
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+void SHA1_freeMemory(SHA1_packet_t* packet)
+{
+     7c8:	defffe04 	addi	sp,sp,-8
+     7cc:	dc000015 	stw	r16,0(sp)
+     7d0:	2021883a 	mov	r16,r4
+	if (packet->m_512bit_block != NULL)
+	{
+		free(packet->m_512bit_block);
+     7d4:	1009883a 	mov	r4,r2
+ * \brief free the memory allocated for the member of the objects in the argument list.
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+void SHA1_freeMemory(SHA1_packet_t* packet)
+{
+     7d8:	dfc00115 	stw	ra,4(sp)
+	if (packet->m_512bit_block != NULL)
+	{
+		free(packet->m_512bit_block);
+     7dc:	00012d40 	call	12d4 <free>
+		packet->m_512bit_block = NULL;
+     7e0:	80000215 	stw	zero,8(r16)
+	}
+}
+     7e4:	dfc00117 	ldw	ra,4(sp)
+     7e8:	dc000017 	ldw	r16,0(sp)
+     7ec:	dec00204 	addi	sp,sp,8
+     7f0:	f800283a 	ret
+
+000007f4 <SHA1_printPreProcessedPacket>:
+ * \brief Print out the pre-processed blocks of the SHA-1 packet on the Eclipse Console
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+void SHA1_printPreProcessedPacket(SHA1_packet_t* packet)
+{
+     7f4:	defff904 	addi	sp,sp,-28
+     7f8:	dc400115 	stw	r17,4(sp)
+     7fc:	2023883a 	mov	r17,r4
+	alt_putstr("\n## Printing the pre-processed blocks of 512-bit wide input message of the SHA-1 packet ##\n");
+     800:	01000034 	movhi	r4,0
+     804:	2106a704 	addi	r4,r4,6812
+ * \brief Print out the pre-processed blocks of the SHA-1 packet on the Eclipse Console
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ */
+void SHA1_printPreProcessedPacket(SHA1_packet_t* packet)
+{
+     808:	dfc00615 	stw	ra,24(sp)
+     80c:	dd400515 	stw	r21,20(sp)
+     810:	dd000415 	stw	r20,16(sp)
+     814:	dc800215 	stw	r18,8(sp)
+     818:	dc000015 	stw	r16,0(sp)
+     81c:	dcc00315 	stw	r19,12(sp)
+	alt_putstr("\n## Printing the pre-processed blocks of 512-bit wide input message of the SHA-1 packet ##\n");
+     820:	00018640 	call	1864 <alt_putstr>
+
+	alt_printf("Number of pre-processed Blocks: %x (in hex)\n", packet->m_numOf512bitBlocks);
+     824:	89400017 	ldw	r5,0(r17)
+     828:	89800117 	ldw	r6,4(r17)
+     82c:	01000034 	movhi	r4,0
+     830:	2106be04 	addi	r4,r4,6904
+     834:	00016ac0 	call	16ac <alt_printf>
+
+	alt_putstr("block indexes are in hex!\n");
+     838:	01000034 	movhi	r4,0
+     83c:	2106ca04 	addi	r4,r4,6952
+     840:	00018640 	call	1864 <alt_putstr>
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     844:	0029883a 	mov	r20,zero
+     848:	0021883a 	mov	r16,zero
+     84c:	0025883a 	mov	r18,zero
+	{
+		alt_printf("- Block[%x]:\n", blockIndex);
+		for(uint8_t wordIndex = 0; wordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; wordIndex++)
+     850:	05400404 	movi	r21,16
+	alt_putstr("\n## Printing the pre-processed blocks of 512-bit wide input message of the SHA-1 packet ##\n");
+
+	alt_printf("Number of pre-processed Blocks: %x (in hex)\n", packet->m_numOf512bitBlocks);
+
+	alt_putstr("block indexes are in hex!\n");
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     854:	88800117 	ldw	r2,4(r17)
+     858:	9080172e 	bgeu	r18,r2,8b8 <SHA1_printPreProcessedPacket+0xc4>
+	{
+		alt_printf("- Block[%x]:\n", blockIndex);
+     85c:	01000034 	movhi	r4,0
+     860:	800b883a 	mov	r5,r16
+     864:	900d883a 	mov	r6,r18
+     868:	2106d104 	addi	r4,r4,6980
+     86c:	00016ac0 	call	16ac <alt_printf>
+     870:	0027883a 	mov	r19,zero
+		for(uint8_t wordIndex = 0; wordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; wordIndex++)
+		{
+			//this API is quite strange.. I cannot print the index, if I do, things will mess up!
+			alt_printf("  + word[] = 0x%x \n", packet->m_512bit_block[blockIndex].m_word[wordIndex]);
+     874:	88800217 	ldw	r2,8(r17)
+     878:	01000034 	movhi	r4,0
+     87c:	2106d504 	addi	r4,r4,6996
+     880:	1507883a 	add	r3,r2,r20
+     884:	9cc5883a 	add	r2,r19,r19
+     888:	1085883a 	add	r2,r2,r2
+     88c:	1885883a 	add	r2,r3,r2
+     890:	11400017 	ldw	r5,0(r2)
+     894:	9cc00044 	addi	r19,r19,1
+     898:	00016ac0 	call	16ac <alt_printf>
+
+	alt_putstr("block indexes are in hex!\n");
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+	{
+		alt_printf("- Block[%x]:\n", blockIndex);
+		for(uint8_t wordIndex = 0; wordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; wordIndex++)
+     89c:	9d7ff51e 	bne	r19,r21,874 <_gp+0xffff6ae8>
+	alt_putstr("\n## Printing the pre-processed blocks of 512-bit wide input message of the SHA-1 packet ##\n");
+
+	alt_printf("Number of pre-processed Blocks: %x (in hex)\n", packet->m_numOf512bitBlocks);
+
+	alt_putstr("block indexes are in hex!\n");
+	for(uint64_t blockIndex = 0; blockIndex < packet->m_numOf512bitBlocks; blockIndex++)
+     8a0:	80800044 	addi	r2,r16,1
+     8a4:	1407803a 	cmpltu	r3,r2,r16
+     8a8:	1ca5883a 	add	r18,r3,r18
+     8ac:	1021883a 	mov	r16,r2
+     8b0:	a5001a04 	addi	r20,r20,104
+     8b4:	003fe706 	br	854 <_gp+0xffff6ac8>
+     8b8:	1480021e 	bne	r2,r18,8c4 <SHA1_printPreProcessedPacket+0xd0>
+     8bc:	88800017 	ldw	r2,0(r17)
+     8c0:	80bfe636 	bltu	r16,r2,85c <_gp+0xffff6ad0>
+			//this API is quite strange.. I cannot print the index, if I do, things will mess up!
+			alt_printf("  + word[] = 0x%x \n", packet->m_512bit_block[blockIndex].m_word[wordIndex]);
+		}
+	}
+
+	alt_putchar('\n');
+     8c4:	01000284 	movi	r4,10
+}
+     8c8:	dfc00617 	ldw	ra,24(sp)
+     8cc:	dd400517 	ldw	r21,20(sp)
+     8d0:	dd000417 	ldw	r20,16(sp)
+     8d4:	dcc00317 	ldw	r19,12(sp)
+     8d8:	dc800217 	ldw	r18,8(sp)
+     8dc:	dc400117 	ldw	r17,4(sp)
+     8e0:	dc000017 	ldw	r16,0(sp)
+     8e4:	dec00704 	addi	sp,sp,28
+			//this API is quite strange.. I cannot print the index, if I do, things will mess up!
+			alt_printf("  + word[] = 0x%x \n", packet->m_512bit_block[blockIndex].m_word[wordIndex]);
+		}
+	}
+
+	alt_putchar('\n');
+     8e8:	000181c1 	jmpi	181c <alt_putchar>
+
+000008ec <sha_1>:
+	uint16_t expandedWordIndex = 0;
+
+	//The 512 bit wide input message is mapped on the first 16 words
+	for(; expandedWordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; expandedWordIndex++)
+	{
+		SHA1_expanded_word[expandedWordIndex] = message[expandedWordIndex];
+     8ec:	02400034 	movhi	r9,0
+ * \param uint32_t * hash_ptr : OUT - pointer to the processed hash
+ * \param const uint32_t * message : IN - the pre-processed 512-bit wide input message
+ * \param const uint32_t * prev_hash : IN - pointer to the initial hash
+ */
+void sha_1(uint32_t * hash_ptr, const uint32_t * message, const uint32_t * prev_hash)
+{
+     8f0:	0005883a 	mov	r2,zero
+	uint16_t expandedWordIndex = 0;
+
+	//The 512 bit wide input message is mapped on the first 16 words
+	for(; expandedWordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; expandedWordIndex++)
+	{
+		SHA1_expanded_word[expandedWordIndex] = message[expandedWordIndex];
+     8f4:	4a47ac04 	addi	r9,r9,7856
+static void SHA1_wordExpansion(const uint32_t * message)
+{
+	uint16_t expandedWordIndex = 0;
+
+	//The 512 bit wide input message is mapped on the first 16 words
+	for(; expandedWordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; expandedWordIndex++)
+     8f8:	00c01004 	movi	r3,64
+	{
+		SHA1_expanded_word[expandedWordIndex] = message[expandedWordIndex];
+     8fc:	288f883a 	add	r7,r5,r2
+     900:	3a000017 	ldw	r8,0(r7)
+     904:	124f883a 	add	r7,r2,r9
+     908:	03000034 	movhi	r12,0
+     90c:	3a000015 	stw	r8,0(r7)
+     910:	10800104 	addi	r2,r2,4
+     914:	6307ac04 	addi	r12,r12,7856
+static void SHA1_wordExpansion(const uint32_t * message)
+{
+	uint16_t expandedWordIndex = 0;
+
+	//The 512 bit wide input message is mapped on the first 16 words
+	for(; expandedWordIndex < SHA1_TOTAL_WORDS_PER_BLOCK; expandedWordIndex++)
+     918:	10fff81e 	bne	r2,r3,8fc <_gp+0xffff6b70>
+     91c:	60800d04 	addi	r2,r12,52
+     920:	000f883a 	mov	r7,zero
+	{
+		SHA1_expanded_word[expandedWordIndex] = message[expandedWordIndex];
+	}
+
+	//from 16 to 79 is another story
+	for(; expandedWordIndex < SHA1_NUM_OF_EXPANDED_WORDS_PER_BLOCK; expandedWordIndex++)
+     924:	02004004 	movi	r8,256
+
+		//XOR result of the 4 earlier words
+		uint32_t xorOperationResult = wordIndexMinus3 ^ wordIndexMinus8 ^ wordIndexMinus14 ^ wordIndexMinus16;
+
+		//Perform ROTL by 1 bit on the XOR result
+		SHA1_expanded_word[expandedWordIndex] = SHA1_simpleROTL32(xorOperationResult, 1);
+     928:	11400017 	ldw	r5,0(r2)
+     92c:	10fffb17 	ldw	r3,-20(r2)
+     930:	10800104 	addi	r2,r2,4
+     934:	28c6f03a 	xor	r3,r5,r3
+     938:	117ff417 	ldw	r5,-48(r2)
+     93c:	1946f03a 	xor	r3,r3,r5
+	{
+		//save the indexes from earlier operation
+		uint32_t wordIndexMinus3  = SHA1_expanded_word[expandedWordIndex - 3];
+		uint32_t wordIndexMinus8  = SHA1_expanded_word[expandedWordIndex - 8];
+		uint32_t wordIndexMinus14 = SHA1_expanded_word[expandedWordIndex - 14];
+		uint32_t wordIndexMinus16 = SHA1_expanded_word[expandedWordIndex - 16];
+     940:	3b0b883a 	add	r5,r7,r12
+
+		//XOR result of the 4 earlier words
+		uint32_t xorOperationResult = wordIndexMinus3 ^ wordIndexMinus8 ^ wordIndexMinus14 ^ wordIndexMinus16;
+
+		//Perform ROTL by 1 bit on the XOR result
+		SHA1_expanded_word[expandedWordIndex] = SHA1_simpleROTL32(xorOperationResult, 1);
+     944:	29400017 	ldw	r5,0(r5)
+     948:	39c00104 	addi	r7,r7,4
+     94c:	1946f03a 	xor	r3,r3,r5
+     950:	1806107a 	roli	r3,r3,1
+     954:	10c00215 	stw	r3,8(r2)
+	{
+		SHA1_expanded_word[expandedWordIndex] = message[expandedWordIndex];
+	}
+
+	//from 16 to 79 is another story
+	for(; expandedWordIndex < SHA1_NUM_OF_EXPANDED_WORDS_PER_BLOCK; expandedWordIndex++)
+     958:	3a3ff31e 	bne	r7,r8,928 <_gp+0xffff6b9c>
+
+	//Buffer for the prev_hash, this buffer will be modified in the 80 rounds.
+	uint32_t inputHash[SHA1_NUM_OF_HASH_WORDS_PER_BLOCK] = {0};
+
+	//Initially, the buffer is the prev_hash
+	inputHash[SHA1_HASH_A] = prev_hash[SHA1_HASH_A];
+     95c:	32000017 	ldw	r8,0(r6)
+	inputHash[SHA1_HASH_B] = prev_hash[SHA1_HASH_B];
+     960:	32400117 	ldw	r9,4(r6)
+	inputHash[SHA1_HASH_C] = prev_hash[SHA1_HASH_C];
+     964:	31c00217 	ldw	r7,8(r6)
+	inputHash[SHA1_HASH_D] = prev_hash[SHA1_HASH_D];
+     968:	31400317 	ldw	r5,12(r6)
+	inputHash[SHA1_HASH_E] = prev_hash[SHA1_HASH_E];
+     96c:	33c00417 	ldw	r15,16(r6)
+ * \param uint32_t * hash_ptr : OUT - pointer to the processed hash
+ * \param const uint32_t * message : IN - the pre-processed 512-bit wide input message
+ * \param const uint32_t * prev_hash : IN - pointer to the initial hash
+ */
+void sha_1(uint32_t * hash_ptr, const uint32_t * message, const uint32_t * prev_hash)
+{
+     970:	defffd04 	addi	sp,sp,-12
+     974:	dfc00215 	stw	ra,8(sp)
+     978:	dc000015 	stw	r16,0(sp)
+     97c:	dc400115 	stw	r17,4(sp)
+	//Initially, the buffer is the prev_hash
+	inputHash[SHA1_HASH_A] = prev_hash[SHA1_HASH_A];
+	inputHash[SHA1_HASH_B] = prev_hash[SHA1_HASH_B];
+	inputHash[SHA1_HASH_C] = prev_hash[SHA1_HASH_C];
+	inputHash[SHA1_HASH_D] = prev_hash[SHA1_HASH_D];
+	inputHash[SHA1_HASH_E] = prev_hash[SHA1_HASH_E];
+     980:	001b883a 	mov	r13,zero
+	alt_printf(" prev_hash E = %x\n\n", prev_hash[SHA1_HASH_E]);
+
+#endif
+
+	//perform the 80 rounds of the Compression Function for the current 512-bit block
+	for(uint8_t roundIndex = 0; roundIndex < SHA1_NUM_OF_ROUNDS_PER_BLOCK; roundIndex++)
+     984:	0017883a 	mov	r11,zero
+
+	//constant K value depending on the current stage of the Compression Function
+	uint32_t constantK = 0;
+
+	//if the current round is in stage 1 of the Compression Function
+	if( SHA1_isStage01(roundIndex) )
+     988:	038004c4 	movi	r14,19
+	assert( (numOfShiftBits < 31) && "shift too much" );
+
+	//in case shift by 0 bits.
+	if(numOfShiftBits == 0) return uint32Value;
+
+	return (uint32Value << numOfShiftBits) | (uint32Value >> (32 - numOfShiftBits));
+     98c:	04000084 	movi	r16,2
+	alt_printf(" prev_hash E = %x\n\n", prev_hash[SHA1_HASH_E]);
+
+#endif
+
+	//perform the 80 rounds of the Compression Function for the current 512-bit block
+	for(uint8_t roundIndex = 0; roundIndex < SHA1_NUM_OF_ROUNDS_PER_BLOCK; roundIndex++)
+     990:	07c01404 	movi	ra,80
+
+	//constant K value depending on the current stage of the Compression Function
+	uint32_t constantK = 0;
+
+	//if the current round is in stage 1 of the Compression Function
+	if( SHA1_isStage01(roundIndex) )
+     994:	58803fcc 	andi	r2,r11,255
+     998:	70800736 	bltu	r14,r2,9b8 <sha_1+0xcc>
+ * \param uint32_t z : IN - third parameter
+ * \return result of the computation
+ */
+static uint32_t SHA1_kernelFunctionForStage01(uint32_t x, uint32_t y, uint32_t z)
+{
+	return (x & y) ^ ((~x) & z);
+     99c:	0244303a 	nor	r2,zero,r9
+     9a0:	1146703a 	and	r3,r2,r5
+     9a4:	3a44703a 	and	r2,r7,r9
+     9a8:	1884f03a 	xor	r2,r3,r2
+
+	//if the current round is in stage 1 of the Compression Function
+	if( SHA1_isStage01(roundIndex) )
+	{
+		processInputHashBCD = SHA1_kernelFunctionForStage01(inputHashB, inputHashC, inputHashD);
+		constantK = SHA1_K_STAGE_1;
+     9ac:	00d6a0b4 	movhi	r3,23170
+     9b0:	18de6644 	addi	r3,r3,31129
+     9b4:	00001406 	br	a08 <sha_1+0x11c>
+	}
+	//if the current round is in stage 2 of the Compression Function
+	else if( SHA1_isStage02(roundIndex) )
+     9b8:	58fffb04 	addi	r3,r11,-20
+     9bc:	18c03fcc 	andi	r3,r3,255
+     9c0:	29c4f03a 	xor	r2,r5,r7
+     9c4:	70c00436 	bltu	r14,r3,9d8 <sha_1+0xec>
+	{
+		processInputHashBCD = SHA1_kernelFunctionForStage02(inputHashB, inputHashC, inputHashD);
+		constantK = SHA1_K_STAGE_2;
+     9c8:	00dbb6b4 	movhi	r3,28378
+ * \param uint32_t z : IN - third parameter
+ * \return result of the computation
+ */
+static uint32_t SHA1_kernelFunctionForStage02(uint32_t x, uint32_t y, uint32_t z)
+{
+	return x ^ y ^ z;
+     9cc:	1244f03a 	xor	r2,r2,r9
+	}
+	//if the current round is in stage 2 of the Compression Function
+	else if( SHA1_isStage02(roundIndex) )
+	{
+		processInputHashBCD = SHA1_kernelFunctionForStage02(inputHashB, inputHashC, inputHashD);
+		constantK = SHA1_K_STAGE_2;
+     9d0:	18fae844 	addi	r3,r3,-5215
+     9d4:	00000c06 	br	a08 <sha_1+0x11c>
+	}
+	//if the current round is in stage 3 of the Compression Function
+	else if( SHA1_isStage03(roundIndex) )
+     9d8:	58fff604 	addi	r3,r11,-40
+     9dc:	18c03fcc 	andi	r3,r3,255
+     9e0:	70c00636 	bltu	r14,r3,9fc <sha_1+0x110>
+ * \param uint32_t z : IN - third parameter
+ * \return result of the computation
+ */
+static uint32_t SHA1_kernelFunctionForStage03(uint32_t x, uint32_t y, uint32_t z)
+{
+	return (x & y) ^ (x & z) ^ (y & z);
+     9e4:	29c6703a 	and	r3,r5,r7
+     9e8:	1244703a 	and	r2,r2,r9
+     9ec:	10c4f03a 	xor	r2,r2,r3
+	}
+	//if the current round is in stage 3 of the Compression Function
+	else if( SHA1_isStage03(roundIndex) )
+	{
+		processInputHashBCD = SHA1_kernelFunctionForStage03(inputHashB, inputHashC, inputHashD);
+		constantK = SHA1_K_STAGE_3;
+     9f0:	00e3c734 	movhi	r3,36636
+     9f4:	18ef3704 	addi	r3,r3,-17188
+     9f8:	00000306 	br	a08 <sha_1+0x11c>
+	}
+	//if the current round is in stage 4 of the Compression Function
+	else if( SHA1_isStage04(roundIndex) )
+	{
+		processInputHashBCD = SHA1_kernelFunctionForStage04(inputHashB, inputHashC, inputHashD);
+		constantK = SHA1_K_STAGE_4;
+     9fc:	00f298f4 	movhi	r3,51811
+ * \param uint32_t z : IN - third parameter
+ * \return result of the computation
+ */
+static uint32_t SHA1_kernelFunctionForStage04(uint32_t x, uint32_t y, uint32_t z)
+{
+	return x ^ y ^ z;
+     a00:	1244f03a 	xor	r2,r2,r9
+	}
+	//if the current round is in stage 4 of the Compression Function
+	else if( SHA1_isStage04(roundIndex) )
+	{
+		processInputHashBCD = SHA1_kernelFunctionForStage04(inputHashB, inputHashC, inputHashD);
+		constantK = SHA1_K_STAGE_4;
+     a04:	18f07584 	addi	r3,r3,-15914
+	}
+
+	//process input hash A by using ROTL by 5 bits, check Prof. Jakob's slides for explanation of the number '5'
+	uint32_t processInputHashA = SHA1_simpleROTL32(inputHashA, 5);
+
+	return processInputHashA + processInputHashBCD + inputHashE + SHA1_expanded_word[roundIndex] + constantK;
+     a08:	6b23883a 	add	r17,r13,r12
+     a0c:	8c400017 	ldw	r17,0(r17)
+     a10:	4014117a 	roli	r10,r8,5
+     a14:	6b400104 	addi	r13,r13,4
+     a18:	5455883a 	add	r10,r10,r17
+     a1c:	5085883a 	add	r2,r10,r2
+     a20:	10c5883a 	add	r2,r2,r3
+	alt_printf(" prev_hash E = %x\n\n", prev_hash[SHA1_HASH_E]);
+
+#endif
+
+	//perform the 80 rounds of the Compression Function for the current 512-bit block
+	for(uint8_t roundIndex = 0; roundIndex < SHA1_NUM_OF_ROUNDS_PER_BLOCK; roundIndex++)
+     a24:	58c00044 	addi	r3,r11,1
+     a28:	1817883a 	mov	r11,r3
+     a2c:	18c03fcc 	andi	r3,r3,255
+	}
+
+	//process input hash A by using ROTL by 5 bits, check Prof. Jakob's slides for explanation of the number '5'
+	uint32_t processInputHashA = SHA1_simpleROTL32(inputHashA, 5);
+
+	return processInputHashA + processInputHashBCD + inputHashE + SHA1_expanded_word[roundIndex] + constantK;
+     a30:	13c5883a 	add	r2,r2,r15
+	assert( (numOfShiftBits < 31) && "shift too much" );
+
+	//in case shift by 0 bits.
+	if(numOfShiftBits == 0) return uint32Value;
+
+	return (uint32Value << numOfShiftBits) | (uint32Value >> (32 - numOfShiftBits));
+     a34:	4c14583a 	ror	r10,r9,r16
+     a38:	281f883a 	mov	r15,r5
+     a3c:	3823883a 	mov	r17,r7
+     a40:	4013883a 	mov	r9,r8
+	alt_printf(" prev_hash E = %x\n\n", prev_hash[SHA1_HASH_E]);
+
+#endif
+
+	//perform the 80 rounds of the Compression Function for the current 512-bit block
+	for(uint8_t roundIndex = 0; roundIndex < SHA1_NUM_OF_ROUNDS_PER_BLOCK; roundIndex++)
+     a44:	1fc00426 	beq	r3,ra,a58 <sha_1+0x16c>
+	}
+
+	//process input hash A by using ROTL by 5 bits, check Prof. Jakob's slides for explanation of the number '5'
+	uint32_t processInputHashA = SHA1_simpleROTL32(inputHashA, 5);
+
+	return processInputHashA + processInputHashBCD + inputHashE + SHA1_expanded_word[roundIndex] + constantK;
+     a48:	1011883a 	mov	r8,r2
+	assert( (numOfShiftBits < 31) && "shift too much" );
+
+	//in case shift by 0 bits.
+	if(numOfShiftBits == 0) return uint32Value;
+
+	return (uint32Value << numOfShiftBits) | (uint32Value >> (32 - numOfShiftBits));
+     a4c:	500f883a 	mov	r7,r10
+     a50:	880b883a 	mov	r5,r17
+     a54:	003fcf06 	br	994 <_gp+0xffff6c08>
+     a58:	20800015 	stw	r2,0(r4)
+     a5c:	22000115 	stw	r8,4(r4)
+     a60:	22800215 	stw	r10,8(r4)
+     a64:	21c00315 	stw	r7,12(r4)
+     a68:	21400415 	stw	r5,16(r4)
+	alt_putchar('\n');
+
+#endif
+
+	//compute final hash values for current 512-bit block
+	hash_ptr[SHA1_HASH_A] += prev_hash[SHA1_HASH_A];
+     a6c:	30c00017 	ldw	r3,0(r6)
+     a70:	1885883a 	add	r2,r3,r2
+     a74:	20800015 	stw	r2,0(r4)
+	hash_ptr[SHA1_HASH_B] += prev_hash[SHA1_HASH_B];
+     a78:	30800117 	ldw	r2,4(r6)
+     a7c:	1211883a 	add	r8,r2,r8
+     a80:	22000115 	stw	r8,4(r4)
+	hash_ptr[SHA1_HASH_C] += prev_hash[SHA1_HASH_C];
+     a84:	30800217 	ldw	r2,8(r6)
+     a88:	1295883a 	add	r10,r2,r10
+     a8c:	22800215 	stw	r10,8(r4)
+	hash_ptr[SHA1_HASH_D] += prev_hash[SHA1_HASH_D];
+     a90:	30800317 	ldw	r2,12(r6)
+     a94:	11cf883a 	add	r7,r2,r7
+     a98:	21c00315 	stw	r7,12(r4)
+	hash_ptr[SHA1_HASH_E] += prev_hash[SHA1_HASH_E];
+     a9c:	30800417 	ldw	r2,16(r6)
+     aa0:	114b883a 	add	r5,r2,r5
+     aa4:	21400415 	stw	r5,16(r4)
+}
+     aa8:	dfc00217 	ldw	ra,8(sp)
+     aac:	dc400117 	ldw	r17,4(sp)
+     ab0:	dc000017 	ldw	r16,0(sp)
+     ab4:	dec00304 	addi	sp,sp,12
+     ab8:	f800283a 	ret
+
+00000abc <SHA1_printFinalHash>:
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_printFinalHash(SHA1_packet_t* packet, MSG_message_t* message)
+{
+     abc:	defffb04 	addi	sp,sp,-20
+     ac0:	dc000215 	stw	r16,8(sp)
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	alt_printf("\nThe final Hash values of the string \"%s\" is\n\n", message->m_string);
+     ac4:	29400217 	ldw	r5,8(r5)
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_printFinalHash(SHA1_packet_t* packet, MSG_message_t* message)
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+     ac8:	24000017 	ldw	r16,0(r4)
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_printFinalHash(SHA1_packet_t* packet, MSG_message_t* message)
+{
+     acc:	dc400315 	stw	r17,12(sp)
+     ad0:	2023883a 	mov	r17,r4
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	alt_printf("\nThe final Hash values of the string \"%s\" is\n\n", message->m_string);
+     ad4:	01000034 	movhi	r4,0
+     ad8:	2106da04 	addi	r4,r4,7016
+ *
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param MSG_message_t* message : IN - the Message Object that contains an uin32_t array representation of the input string
+ */
+void SHA1_printFinalHash(SHA1_packet_t* packet, MSG_message_t* message)
+{
+     adc:	dfc00415 	stw	ra,16(sp)
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+     ae0:	843fffc4 	addi	r16,r16,-1
+
+	alt_printf("\nThe final Hash values of the string \"%s\" is\n\n", message->m_string);
+     ae4:	00016ac0 	call	16ac <alt_printf>
+	alt_printf("	%x %x %x %x %x\n",
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_A],
+     ae8:	88800217 	ldw	r2,8(r17)
+     aec:	84001a24 	muli	r16,r16,104
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	alt_printf("\nThe final Hash values of the string \"%s\" is\n\n", message->m_string);
+	alt_printf("	%x %x %x %x %x\n",
+     af0:	01000034 	movhi	r4,0
+     af4:	2106e604 	addi	r4,r4,7064
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_A],
+     af8:	1405883a 	add	r2,r2,r16
+{
+	//find the index of the last 512-bit block
+	uint64_t lastBlockIndex = packet->m_numOf512bitBlocks - 1;
+
+	alt_printf("\nThe final Hash values of the string \"%s\" is\n\n", message->m_string);
+	alt_printf("	%x %x %x %x %x\n",
+     afc:	10c01917 	ldw	r3,100(r2)
+     b00:	11c01717 	ldw	r7,92(r2)
+     b04:	11801617 	ldw	r6,88(r2)
+     b08:	11401517 	ldw	r5,84(r2)
+     b0c:	d8c00115 	stw	r3,4(sp)
+     b10:	10801817 	ldw	r2,96(r2)
+     b14:	d8800015 	stw	r2,0(sp)
+     b18:	00016ac0 	call	16ac <alt_printf>
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_B],
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_C],
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_D],
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_E]);
+
+	alt_putchar('\n');
+     b1c:	01000284 	movi	r4,10
+}
+     b20:	dfc00417 	ldw	ra,16(sp)
+     b24:	dc400317 	ldw	r17,12(sp)
+     b28:	dc000217 	ldw	r16,8(sp)
+     b2c:	dec00504 	addi	sp,sp,20
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_B],
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_C],
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_D],
+			packet->m_512bit_block[lastBlockIndex].m_outputHash[SHA1_HASH_E]);
+
+	alt_putchar('\n');
+     b30:	000181c1 	jmpi	181c <alt_putchar>
+
+00000b34 <SHA1_updateInputHashForNextBlock>:
+ * \param SHA1_packet_t* packet : IN - the SHA-1 Packet Object
+ * \param uint64_t blockIndex : IN - current block index
+ */
+void SHA1_updateInputHashForNextBlock(SHA1_packet_t* packet, uint64_t blockIndex)
+{
+	uint64_t nextBlockIndex = blockIndex + 1;
+     b34:	28800044 	addi	r2,r5,1
+     b38:	1147803a 	cmpltu	r3,r2,r5
+     b3c:	198d883a 	add	r6,r3,r6
+
+	//if the current block index is the last block => we end our function
+	if( nextBlockIndex >= packet->m_numOf512bitBlocks )
+     b40:	20c00117 	ldw	r3,4(r4)
+     b44:	30c00336 	bltu	r6,r3,b54 <SHA1_updateInputHashForNextBlock+0x20>
+     b48:	1980111e 	bne	r3,r6,b90 <SHA1_updateInputHashForNextBlock+0x5c>
+     b4c:	20c00017 	ldw	r3,0(r4)
+     b50:	10c00f2e 	bgeu	r2,r3,b90 <SHA1_updateInputHashForNextBlock+0x5c>
+	{
+		return;
+	}
+
+	packet->m_512bit_block[nextBlockIndex].m_inputHash[SHA1_HASH_A] = packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_A];
+     b54:	20c00217 	ldw	r3,8(r4)
+     b58:	29401a24 	muli	r5,r5,104
+     b5c:	10801a24 	muli	r2,r2,104
+     b60:	194b883a 	add	r5,r3,r5
+     b64:	1885883a 	add	r2,r3,r2
+     b68:	28c01517 	ldw	r3,84(r5)
+     b6c:	10c01015 	stw	r3,64(r2)
+	packet->m_512bit_block[nextBlockIndex].m_inputHash[SHA1_HASH_B] = packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_B];
+     b70:	28c01617 	ldw	r3,88(r5)
+     b74:	10c01115 	stw	r3,68(r2)
+	packet->m_512bit_block[nextBlockIndex].m_inputHash[SHA1_HASH_C] = packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_C];
+     b78:	28c01717 	ldw	r3,92(r5)
+     b7c:	10c01215 	stw	r3,72(r2)
+	packet->m_512bit_block[nextBlockIndex].m_inputHash[SHA1_HASH_D] = packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_D];
+     b80:	28c01817 	ldw	r3,96(r5)
+     b84:	10c01315 	stw	r3,76(r2)
+	packet->m_512bit_block[nextBlockIndex].m_inputHash[SHA1_HASH_E] = packet->m_512bit_block[blockIndex].m_outputHash[SHA1_HASH_E];
+     b88:	28c01917 	ldw	r3,100(r5)
+     b8c:	10c01415 	stw	r3,80(r2)
+     b90:	f800283a 	ret
+
+00000b94 <__udivdi3>:
+     b94:	defff504 	addi	sp,sp,-44
+     b98:	dcc00415 	stw	r19,16(sp)
+     b9c:	dc000115 	stw	r16,4(sp)
+     ba0:	dfc00a15 	stw	ra,40(sp)
+     ba4:	df000915 	stw	fp,36(sp)
+     ba8:	ddc00815 	stw	r23,32(sp)
+     bac:	dd800715 	stw	r22,28(sp)
+     bb0:	dd400615 	stw	r21,24(sp)
+     bb4:	dd000515 	stw	r20,20(sp)
+     bb8:	dc800315 	stw	r18,12(sp)
+     bbc:	dc400215 	stw	r17,8(sp)
+     bc0:	2027883a 	mov	r19,r4
+     bc4:	2821883a 	mov	r16,r5
+     bc8:	3800411e 	bne	r7,zero,cd0 <__udivdi3+0x13c>
+     bcc:	3023883a 	mov	r17,r6
+     bd0:	2025883a 	mov	r18,r4
+     bd4:	2980522e 	bgeu	r5,r6,d20 <__udivdi3+0x18c>
+     bd8:	00bfffd4 	movui	r2,65535
+     bdc:	282d883a 	mov	r22,r5
+     be0:	1180a836 	bltu	r2,r6,e84 <__udivdi3+0x2f0>
+     be4:	00803fc4 	movi	r2,255
+     be8:	1185803a 	cmpltu	r2,r2,r6
+     bec:	100490fa 	slli	r2,r2,3
+     bf0:	3086d83a 	srl	r3,r6,r2
+     bf4:	01000034 	movhi	r4,0
+     bf8:	2106eb04 	addi	r4,r4,7084
+     bfc:	20c7883a 	add	r3,r4,r3
+     c00:	18c00003 	ldbu	r3,0(r3)
+     c04:	1885883a 	add	r2,r3,r2
+     c08:	00c00804 	movi	r3,32
+     c0c:	1887c83a 	sub	r3,r3,r2
+     c10:	18000526 	beq	r3,zero,c28 <__udivdi3+0x94>
+     c14:	80e0983a 	sll	r16,r16,r3
+     c18:	9884d83a 	srl	r2,r19,r2
+     c1c:	30e2983a 	sll	r17,r6,r3
+     c20:	98e4983a 	sll	r18,r19,r3
+     c24:	142cb03a 	or	r22,r2,r16
+     c28:	882ad43a 	srli	r21,r17,16
+     c2c:	b009883a 	mov	r4,r22
+     c30:	8d3fffcc 	andi	r20,r17,65535
+     c34:	a80b883a 	mov	r5,r21
+     c38:	00012680 	call	1268 <__umodsi3>
+     c3c:	b009883a 	mov	r4,r22
+     c40:	a80b883a 	mov	r5,r21
+     c44:	1027883a 	mov	r19,r2
+     c48:	00012040 	call	1204 <__udivsi3>
+     c4c:	102d883a 	mov	r22,r2
+     c50:	9826943a 	slli	r19,r19,16
+     c54:	9004d43a 	srli	r2,r18,16
+     c58:	a5a1383a 	mul	r16,r20,r22
+     c5c:	14c4b03a 	or	r2,r2,r19
+     c60:	1400052e 	bgeu	r2,r16,c78 <__udivdi3+0xe4>
+     c64:	1445883a 	add	r2,r2,r17
+     c68:	b0ffffc4 	addi	r3,r22,-1
+     c6c:	14400136 	bltu	r2,r17,c74 <__udivdi3+0xe0>
+     c70:	14012336 	bltu	r2,r16,1100 <__udivdi3+0x56c>
+     c74:	182d883a 	mov	r22,r3
+     c78:	1421c83a 	sub	r16,r2,r16
+     c7c:	a80b883a 	mov	r5,r21
+     c80:	8009883a 	mov	r4,r16
+     c84:	00012680 	call	1268 <__umodsi3>
+     c88:	1027883a 	mov	r19,r2
+     c8c:	a80b883a 	mov	r5,r21
+     c90:	8009883a 	mov	r4,r16
+     c94:	00012040 	call	1204 <__udivsi3>
+     c98:	9826943a 	slli	r19,r19,16
+     c9c:	a0a9383a 	mul	r20,r20,r2
+     ca0:	94bfffcc 	andi	r18,r18,65535
+     ca4:	94e4b03a 	or	r18,r18,r19
+     ca8:	9500052e 	bgeu	r18,r20,cc0 <__udivdi3+0x12c>
+     cac:	8ca5883a 	add	r18,r17,r18
+     cb0:	10ffffc4 	addi	r3,r2,-1
+     cb4:	9440f136 	bltu	r18,r17,107c <__udivdi3+0x4e8>
+     cb8:	9500f02e 	bgeu	r18,r20,107c <__udivdi3+0x4e8>
+     cbc:	10bfff84 	addi	r2,r2,-2
+     cc0:	b00c943a 	slli	r6,r22,16
+     cc4:	0007883a 	mov	r3,zero
+     cc8:	3084b03a 	or	r2,r6,r2
+     ccc:	00005906 	br	e34 <__udivdi3+0x2a0>
+     cd0:	29c05636 	bltu	r5,r7,e2c <__udivdi3+0x298>
+     cd4:	00bfffd4 	movui	r2,65535
+     cd8:	11c0622e 	bgeu	r2,r7,e64 <__udivdi3+0x2d0>
+     cdc:	00804034 	movhi	r2,256
+     ce0:	10bfffc4 	addi	r2,r2,-1
+     ce4:	11c0ee36 	bltu	r2,r7,10a0 <__udivdi3+0x50c>
+     ce8:	00800404 	movi	r2,16
+     cec:	3886d83a 	srl	r3,r7,r2
+     cf0:	01000034 	movhi	r4,0
+     cf4:	2106eb04 	addi	r4,r4,7084
+     cf8:	20c7883a 	add	r3,r4,r3
+     cfc:	18c00003 	ldbu	r3,0(r3)
+     d00:	05400804 	movi	r21,32
+     d04:	1885883a 	add	r2,r3,r2
+     d08:	a8abc83a 	sub	r21,r21,r2
+     d0c:	a800621e 	bne	r21,zero,e98 <__udivdi3+0x304>
+     d10:	3c00e936 	bltu	r7,r16,10b8 <__udivdi3+0x524>
+     d14:	9985403a 	cmpgeu	r2,r19,r6
+     d18:	0007883a 	mov	r3,zero
+     d1c:	00004506 	br	e34 <__udivdi3+0x2a0>
+     d20:	3000041e 	bne	r6,zero,d34 <__udivdi3+0x1a0>
+     d24:	000b883a 	mov	r5,zero
+     d28:	01000044 	movi	r4,1
+     d2c:	00012040 	call	1204 <__udivsi3>
+     d30:	1023883a 	mov	r17,r2
+     d34:	00bfffd4 	movui	r2,65535
+     d38:	14404e2e 	bgeu	r2,r17,e74 <__udivdi3+0x2e0>
+     d3c:	00804034 	movhi	r2,256
+     d40:	10bfffc4 	addi	r2,r2,-1
+     d44:	1440d836 	bltu	r2,r17,10a8 <__udivdi3+0x514>
+     d48:	00800404 	movi	r2,16
+     d4c:	8886d83a 	srl	r3,r17,r2
+     d50:	01000034 	movhi	r4,0
+     d54:	2106eb04 	addi	r4,r4,7084
+     d58:	20c7883a 	add	r3,r4,r3
+     d5c:	18c00003 	ldbu	r3,0(r3)
+     d60:	1885883a 	add	r2,r3,r2
+     d64:	00c00804 	movi	r3,32
+     d68:	1887c83a 	sub	r3,r3,r2
+     d6c:	18008f1e 	bne	r3,zero,fac <__udivdi3+0x418>
+     d70:	882ad43a 	srli	r21,r17,16
+     d74:	8461c83a 	sub	r16,r16,r17
+     d78:	8d3fffcc 	andi	r20,r17,65535
+     d7c:	00c00044 	movi	r3,1
+     d80:	8009883a 	mov	r4,r16
+     d84:	a80b883a 	mov	r5,r21
+     d88:	d8c00015 	stw	r3,0(sp)
+     d8c:	00012680 	call	1268 <__umodsi3>
+     d90:	8009883a 	mov	r4,r16
+     d94:	a80b883a 	mov	r5,r21
+     d98:	1027883a 	mov	r19,r2
+     d9c:	00012040 	call	1204 <__udivsi3>
+     da0:	9826943a 	slli	r19,r19,16
+     da4:	9008d43a 	srli	r4,r18,16
+     da8:	1521383a 	mul	r16,r2,r20
+     dac:	102d883a 	mov	r22,r2
+     db0:	24c8b03a 	or	r4,r4,r19
+     db4:	d8c00017 	ldw	r3,0(sp)
+     db8:	2400052e 	bgeu	r4,r16,dd0 <__udivdi3+0x23c>
+     dbc:	2449883a 	add	r4,r4,r17
+     dc0:	b0bfffc4 	addi	r2,r22,-1
+     dc4:	24400136 	bltu	r4,r17,dcc <__udivdi3+0x238>
+     dc8:	2400ca36 	bltu	r4,r16,10f4 <__udivdi3+0x560>
+     dcc:	102d883a 	mov	r22,r2
+     dd0:	2421c83a 	sub	r16,r4,r16
+     dd4:	a80b883a 	mov	r5,r21
+     dd8:	8009883a 	mov	r4,r16
+     ddc:	d8c00015 	stw	r3,0(sp)
+     de0:	00012680 	call	1268 <__umodsi3>
+     de4:	1027883a 	mov	r19,r2
+     de8:	a80b883a 	mov	r5,r21
+     dec:	8009883a 	mov	r4,r16
+     df0:	00012040 	call	1204 <__udivsi3>
+     df4:	9826943a 	slli	r19,r19,16
+     df8:	1529383a 	mul	r20,r2,r20
+     dfc:	94bfffcc 	andi	r18,r18,65535
+     e00:	94e4b03a 	or	r18,r18,r19
+     e04:	d8c00017 	ldw	r3,0(sp)
+     e08:	9500052e 	bgeu	r18,r20,e20 <__udivdi3+0x28c>
+     e0c:	8ca5883a 	add	r18,r17,r18
+     e10:	113fffc4 	addi	r4,r2,-1
+     e14:	94409736 	bltu	r18,r17,1074 <__udivdi3+0x4e0>
+     e18:	9500962e 	bgeu	r18,r20,1074 <__udivdi3+0x4e0>
+     e1c:	10bfff84 	addi	r2,r2,-2
+     e20:	b00c943a 	slli	r6,r22,16
+     e24:	3084b03a 	or	r2,r6,r2
+     e28:	00000206 	br	e34 <__udivdi3+0x2a0>
+     e2c:	0007883a 	mov	r3,zero
+     e30:	0005883a 	mov	r2,zero
+     e34:	dfc00a17 	ldw	ra,40(sp)
+     e38:	df000917 	ldw	fp,36(sp)
+     e3c:	ddc00817 	ldw	r23,32(sp)
+     e40:	dd800717 	ldw	r22,28(sp)
+     e44:	dd400617 	ldw	r21,24(sp)
+     e48:	dd000517 	ldw	r20,20(sp)
+     e4c:	dcc00417 	ldw	r19,16(sp)
+     e50:	dc800317 	ldw	r18,12(sp)
+     e54:	dc400217 	ldw	r17,8(sp)
+     e58:	dc000117 	ldw	r16,4(sp)
+     e5c:	dec00b04 	addi	sp,sp,44
+     e60:	f800283a 	ret
+     e64:	00803fc4 	movi	r2,255
+     e68:	11c5803a 	cmpltu	r2,r2,r7
+     e6c:	100490fa 	slli	r2,r2,3
+     e70:	003f9e06 	br	cec <_gp+0xffff6f60>
+     e74:	00803fc4 	movi	r2,255
+     e78:	1445803a 	cmpltu	r2,r2,r17
+     e7c:	100490fa 	slli	r2,r2,3
+     e80:	003fb206 	br	d4c <_gp+0xffff6fc0>
+     e84:	00804034 	movhi	r2,256
+     e88:	10bfffc4 	addi	r2,r2,-1
+     e8c:	11808836 	bltu	r2,r6,10b0 <__udivdi3+0x51c>
+     e90:	00800404 	movi	r2,16
+     e94:	003f5606 	br	bf0 <_gp+0xffff6e64>
+     e98:	30aed83a 	srl	r23,r6,r2
+     e9c:	3d4e983a 	sll	r7,r7,r21
+     ea0:	80acd83a 	srl	r22,r16,r2
+     ea4:	9884d83a 	srl	r2,r19,r2
+     ea8:	3deeb03a 	or	r23,r7,r23
+     eac:	b824d43a 	srli	r18,r23,16
+     eb0:	8560983a 	sll	r16,r16,r21
+     eb4:	b009883a 	mov	r4,r22
+     eb8:	900b883a 	mov	r5,r18
+     ebc:	3568983a 	sll	r20,r6,r21
+     ec0:	1420b03a 	or	r16,r2,r16
+     ec4:	00012680 	call	1268 <__umodsi3>
+     ec8:	b009883a 	mov	r4,r22
+     ecc:	900b883a 	mov	r5,r18
+     ed0:	1023883a 	mov	r17,r2
+     ed4:	00012040 	call	1204 <__udivsi3>
+     ed8:	8808943a 	slli	r4,r17,16
+     edc:	bf3fffcc 	andi	fp,r23,65535
+     ee0:	8006d43a 	srli	r3,r16,16
+     ee4:	e0a3383a 	mul	r17,fp,r2
+     ee8:	100d883a 	mov	r6,r2
+     eec:	1906b03a 	or	r3,r3,r4
+     ef0:	1c40042e 	bgeu	r3,r17,f04 <__udivdi3+0x370>
+     ef4:	1dc7883a 	add	r3,r3,r23
+     ef8:	10bfffc4 	addi	r2,r2,-1
+     efc:	1dc0752e 	bgeu	r3,r23,10d4 <__udivdi3+0x540>
+     f00:	100d883a 	mov	r6,r2
+     f04:	1c63c83a 	sub	r17,r3,r17
+     f08:	900b883a 	mov	r5,r18
+     f0c:	8809883a 	mov	r4,r17
+     f10:	d9800015 	stw	r6,0(sp)
+     f14:	00012680 	call	1268 <__umodsi3>
+     f18:	102d883a 	mov	r22,r2
+     f1c:	8809883a 	mov	r4,r17
+     f20:	900b883a 	mov	r5,r18
+     f24:	00012040 	call	1204 <__udivsi3>
+     f28:	b02c943a 	slli	r22,r22,16
+     f2c:	e089383a 	mul	r4,fp,r2
+     f30:	843fffcc 	andi	r16,r16,65535
+     f34:	85a0b03a 	or	r16,r16,r22
+     f38:	d9800017 	ldw	r6,0(sp)
+     f3c:	8100042e 	bgeu	r16,r4,f50 <__udivdi3+0x3bc>
+     f40:	85e1883a 	add	r16,r16,r23
+     f44:	10ffffc4 	addi	r3,r2,-1
+     f48:	85c05e2e 	bgeu	r16,r23,10c4 <__udivdi3+0x530>
+     f4c:	1805883a 	mov	r2,r3
+     f50:	300c943a 	slli	r6,r6,16
+     f54:	a17fffcc 	andi	r5,r20,65535
+     f58:	a028d43a 	srli	r20,r20,16
+     f5c:	3084b03a 	or	r2,r6,r2
+     f60:	10ffffcc 	andi	r3,r2,65535
+     f64:	100cd43a 	srli	r6,r2,16
+     f68:	194f383a 	mul	r7,r3,r5
+     f6c:	1d07383a 	mul	r3,r3,r20
+     f70:	314b383a 	mul	r5,r6,r5
+     f74:	3810d43a 	srli	r8,r7,16
+     f78:	8121c83a 	sub	r16,r16,r4
+     f7c:	1947883a 	add	r3,r3,r5
+     f80:	40c7883a 	add	r3,r8,r3
+     f84:	350d383a 	mul	r6,r6,r20
+     f88:	1940022e 	bgeu	r3,r5,f94 <__udivdi3+0x400>
+     f8c:	01000074 	movhi	r4,1
+     f90:	310d883a 	add	r6,r6,r4
+     f94:	1828d43a 	srli	r20,r3,16
+     f98:	a18d883a 	add	r6,r20,r6
+     f9c:	81803e36 	bltu	r16,r6,1098 <__udivdi3+0x504>
+     fa0:	81803826 	beq	r16,r6,1084 <__udivdi3+0x4f0>
+     fa4:	0007883a 	mov	r3,zero
+     fa8:	003fa206 	br	e34 <_gp+0xffff70a8>
+     fac:	88e2983a 	sll	r17,r17,r3
+     fb0:	80a8d83a 	srl	r20,r16,r2
+     fb4:	80e0983a 	sll	r16,r16,r3
+     fb8:	882ad43a 	srli	r21,r17,16
+     fbc:	9884d83a 	srl	r2,r19,r2
+     fc0:	a009883a 	mov	r4,r20
+     fc4:	a80b883a 	mov	r5,r21
+     fc8:	142eb03a 	or	r23,r2,r16
+     fcc:	98e4983a 	sll	r18,r19,r3
+     fd0:	00012680 	call	1268 <__umodsi3>
+     fd4:	a009883a 	mov	r4,r20
+     fd8:	a80b883a 	mov	r5,r21
+     fdc:	1021883a 	mov	r16,r2
+     fe0:	00012040 	call	1204 <__udivsi3>
+     fe4:	1039883a 	mov	fp,r2
+     fe8:	8d3fffcc 	andi	r20,r17,65535
+     fec:	8020943a 	slli	r16,r16,16
+     ff0:	b804d43a 	srli	r2,r23,16
+     ff4:	a72d383a 	mul	r22,r20,fp
+     ff8:	1404b03a 	or	r2,r2,r16
+     ffc:	1580062e 	bgeu	r2,r22,1018 <__udivdi3+0x484>
+    1000:	1445883a 	add	r2,r2,r17
+    1004:	e0ffffc4 	addi	r3,fp,-1
+    1008:	14403836 	bltu	r2,r17,10ec <__udivdi3+0x558>
+    100c:	1580372e 	bgeu	r2,r22,10ec <__udivdi3+0x558>
+    1010:	e73fff84 	addi	fp,fp,-2
+    1014:	1445883a 	add	r2,r2,r17
+    1018:	15adc83a 	sub	r22,r2,r22
+    101c:	a80b883a 	mov	r5,r21
+    1020:	b009883a 	mov	r4,r22
+    1024:	00012680 	call	1268 <__umodsi3>
+    1028:	1027883a 	mov	r19,r2
+    102c:	b009883a 	mov	r4,r22
+    1030:	a80b883a 	mov	r5,r21
+    1034:	00012040 	call	1204 <__udivsi3>
+    1038:	9826943a 	slli	r19,r19,16
+    103c:	a0a1383a 	mul	r16,r20,r2
+    1040:	b93fffcc 	andi	r4,r23,65535
+    1044:	24c8b03a 	or	r4,r4,r19
+    1048:	2400062e 	bgeu	r4,r16,1064 <__udivdi3+0x4d0>
+    104c:	2449883a 	add	r4,r4,r17
+    1050:	10ffffc4 	addi	r3,r2,-1
+    1054:	24402336 	bltu	r4,r17,10e4 <__udivdi3+0x550>
+    1058:	2400222e 	bgeu	r4,r16,10e4 <__udivdi3+0x550>
+    105c:	10bfff84 	addi	r2,r2,-2
+    1060:	2449883a 	add	r4,r4,r17
+    1064:	e038943a 	slli	fp,fp,16
+    1068:	2421c83a 	sub	r16,r4,r16
+    106c:	e086b03a 	or	r3,fp,r2
+    1070:	003f4306 	br	d80 <_gp+0xffff6ff4>
+    1074:	2005883a 	mov	r2,r4
+    1078:	003f6906 	br	e20 <_gp+0xffff7094>
+    107c:	1805883a 	mov	r2,r3
+    1080:	003f0f06 	br	cc0 <_gp+0xffff6f34>
+    1084:	1806943a 	slli	r3,r3,16
+    1088:	9d66983a 	sll	r19,r19,r21
+    108c:	39ffffcc 	andi	r7,r7,65535
+    1090:	19c7883a 	add	r3,r3,r7
+    1094:	98ffc32e 	bgeu	r19,r3,fa4 <_gp+0xffff7218>
+    1098:	10bfffc4 	addi	r2,r2,-1
+    109c:	003fc106 	br	fa4 <_gp+0xffff7218>
+    10a0:	00800604 	movi	r2,24
+    10a4:	003f1106 	br	cec <_gp+0xffff6f60>
+    10a8:	00800604 	movi	r2,24
+    10ac:	003f2706 	br	d4c <_gp+0xffff6fc0>
+    10b0:	00800604 	movi	r2,24
+    10b4:	003ece06 	br	bf0 <_gp+0xffff6e64>
+    10b8:	0007883a 	mov	r3,zero
+    10bc:	00800044 	movi	r2,1
+    10c0:	003f5c06 	br	e34 <_gp+0xffff70a8>
+    10c4:	813fa12e 	bgeu	r16,r4,f4c <_gp+0xffff71c0>
+    10c8:	10bfff84 	addi	r2,r2,-2
+    10cc:	85e1883a 	add	r16,r16,r23
+    10d0:	003f9f06 	br	f50 <_gp+0xffff71c4>
+    10d4:	1c7f8a2e 	bgeu	r3,r17,f00 <_gp+0xffff7174>
+    10d8:	31bfff84 	addi	r6,r6,-2
+    10dc:	1dc7883a 	add	r3,r3,r23
+    10e0:	003f8806 	br	f04 <_gp+0xffff7178>
+    10e4:	1805883a 	mov	r2,r3
+    10e8:	003fde06 	br	1064 <_gp+0xffff72d8>
+    10ec:	1839883a 	mov	fp,r3
+    10f0:	003fc906 	br	1018 <_gp+0xffff728c>
+    10f4:	b5bfff84 	addi	r22,r22,-2
+    10f8:	2449883a 	add	r4,r4,r17
+    10fc:	003f3406 	br	dd0 <_gp+0xffff7044>
+    1100:	b5bfff84 	addi	r22,r22,-2
+    1104:	1445883a 	add	r2,r2,r17
+    1108:	003edb06 	br	c78 <_gp+0xffff6eec>
+
+0000110c <__divsi3>:
+    110c:	20001b16 	blt	r4,zero,117c <__divsi3+0x70>
+    1110:	000f883a 	mov	r7,zero
+    1114:	28001616 	blt	r5,zero,1170 <__divsi3+0x64>
+    1118:	200d883a 	mov	r6,r4
+    111c:	29001a2e 	bgeu	r5,r4,1188 <__divsi3+0x7c>
+    1120:	00800804 	movi	r2,32
+    1124:	00c00044 	movi	r3,1
+    1128:	00000106 	br	1130 <__divsi3+0x24>
+    112c:	10000d26 	beq	r2,zero,1164 <__divsi3+0x58>
+    1130:	294b883a 	add	r5,r5,r5
+    1134:	10bfffc4 	addi	r2,r2,-1
+    1138:	18c7883a 	add	r3,r3,r3
+    113c:	293ffb36 	bltu	r5,r4,112c <_gp+0xffff73a0>
+    1140:	0005883a 	mov	r2,zero
+    1144:	18000726 	beq	r3,zero,1164 <__divsi3+0x58>
+    1148:	0005883a 	mov	r2,zero
+    114c:	31400236 	bltu	r6,r5,1158 <__divsi3+0x4c>
+    1150:	314dc83a 	sub	r6,r6,r5
+    1154:	10c4b03a 	or	r2,r2,r3
+    1158:	1806d07a 	srli	r3,r3,1
+    115c:	280ad07a 	srli	r5,r5,1
+    1160:	183ffa1e 	bne	r3,zero,114c <_gp+0xffff73c0>
+    1164:	38000126 	beq	r7,zero,116c <__divsi3+0x60>
+    1168:	0085c83a 	sub	r2,zero,r2
+    116c:	f800283a 	ret
+    1170:	014bc83a 	sub	r5,zero,r5
+    1174:	39c0005c 	xori	r7,r7,1
+    1178:	003fe706 	br	1118 <_gp+0xffff738c>
+    117c:	0109c83a 	sub	r4,zero,r4
+    1180:	01c00044 	movi	r7,1
+    1184:	003fe306 	br	1114 <_gp+0xffff7388>
+    1188:	00c00044 	movi	r3,1
+    118c:	003fee06 	br	1148 <_gp+0xffff73bc>
+
+00001190 <__modsi3>:
+    1190:	20001716 	blt	r4,zero,11f0 <__modsi3+0x60>
+    1194:	000f883a 	mov	r7,zero
+    1198:	2005883a 	mov	r2,r4
+    119c:	28001216 	blt	r5,zero,11e8 <__modsi3+0x58>
+    11a0:	2900162e 	bgeu	r5,r4,11fc <__modsi3+0x6c>
+    11a4:	01800804 	movi	r6,32
+    11a8:	00c00044 	movi	r3,1
+    11ac:	00000106 	br	11b4 <__modsi3+0x24>
+    11b0:	30000a26 	beq	r6,zero,11dc <__modsi3+0x4c>
+    11b4:	294b883a 	add	r5,r5,r5
+    11b8:	31bfffc4 	addi	r6,r6,-1
+    11bc:	18c7883a 	add	r3,r3,r3
+    11c0:	293ffb36 	bltu	r5,r4,11b0 <_gp+0xffff7424>
+    11c4:	18000526 	beq	r3,zero,11dc <__modsi3+0x4c>
+    11c8:	1806d07a 	srli	r3,r3,1
+    11cc:	11400136 	bltu	r2,r5,11d4 <__modsi3+0x44>
+    11d0:	1145c83a 	sub	r2,r2,r5
+    11d4:	280ad07a 	srli	r5,r5,1
+    11d8:	183ffb1e 	bne	r3,zero,11c8 <_gp+0xffff743c>
+    11dc:	38000126 	beq	r7,zero,11e4 <__modsi3+0x54>
+    11e0:	0085c83a 	sub	r2,zero,r2
+    11e4:	f800283a 	ret
+    11e8:	014bc83a 	sub	r5,zero,r5
+    11ec:	003fec06 	br	11a0 <_gp+0xffff7414>
+    11f0:	0109c83a 	sub	r4,zero,r4
+    11f4:	01c00044 	movi	r7,1
+    11f8:	003fe706 	br	1198 <_gp+0xffff740c>
+    11fc:	00c00044 	movi	r3,1
+    1200:	003ff106 	br	11c8 <_gp+0xffff743c>
+
+00001204 <__udivsi3>:
+    1204:	200d883a 	mov	r6,r4
+    1208:	2900152e 	bgeu	r5,r4,1260 <__udivsi3+0x5c>
+    120c:	28001416 	blt	r5,zero,1260 <__udivsi3+0x5c>
+    1210:	00800804 	movi	r2,32
+    1214:	00c00044 	movi	r3,1
+    1218:	00000206 	br	1224 <__udivsi3+0x20>
+    121c:	10000e26 	beq	r2,zero,1258 <__udivsi3+0x54>
+    1220:	28000516 	blt	r5,zero,1238 <__udivsi3+0x34>
+    1224:	294b883a 	add	r5,r5,r5
+    1228:	10bfffc4 	addi	r2,r2,-1
+    122c:	18c7883a 	add	r3,r3,r3
+    1230:	293ffa36 	bltu	r5,r4,121c <_gp+0xffff7490>
+    1234:	18000826 	beq	r3,zero,1258 <__udivsi3+0x54>
+    1238:	0005883a 	mov	r2,zero
+    123c:	31400236 	bltu	r6,r5,1248 <__udivsi3+0x44>
+    1240:	314dc83a 	sub	r6,r6,r5
+    1244:	10c4b03a 	or	r2,r2,r3
+    1248:	1806d07a 	srli	r3,r3,1
+    124c:	280ad07a 	srli	r5,r5,1
+    1250:	183ffa1e 	bne	r3,zero,123c <_gp+0xffff74b0>
+    1254:	f800283a 	ret
+    1258:	0005883a 	mov	r2,zero
+    125c:	f800283a 	ret
+    1260:	00c00044 	movi	r3,1
+    1264:	003ff406 	br	1238 <_gp+0xffff74ac>
+
+00001268 <__umodsi3>:
+    1268:	2005883a 	mov	r2,r4
+    126c:	2900122e 	bgeu	r5,r4,12b8 <__umodsi3+0x50>
+    1270:	28001116 	blt	r5,zero,12b8 <__umodsi3+0x50>
+    1274:	01800804 	movi	r6,32
+    1278:	00c00044 	movi	r3,1
+    127c:	00000206 	br	1288 <__umodsi3+0x20>
+    1280:	30000c26 	beq	r6,zero,12b4 <__umodsi3+0x4c>
+    1284:	28000516 	blt	r5,zero,129c <__umodsi3+0x34>
+    1288:	294b883a 	add	r5,r5,r5
+    128c:	31bfffc4 	addi	r6,r6,-1
+    1290:	18c7883a 	add	r3,r3,r3
+    1294:	293ffa36 	bltu	r5,r4,1280 <_gp+0xffff74f4>
+    1298:	18000626 	beq	r3,zero,12b4 <__umodsi3+0x4c>
+    129c:	1806d07a 	srli	r3,r3,1
+    12a0:	11400136 	bltu	r2,r5,12a8 <__umodsi3+0x40>
+    12a4:	1145c83a 	sub	r2,r2,r5
+    12a8:	280ad07a 	srli	r5,r5,1
+    12ac:	183ffb1e 	bne	r3,zero,129c <_gp+0xffff7510>
+    12b0:	f800283a 	ret
+    12b4:	f800283a 	ret
+    12b8:	00c00044 	movi	r3,1
+    12bc:	003ff706 	br	129c <_gp+0xffff7510>
+
+000012c0 <malloc>:
+    12c0:	00800034 	movhi	r2,0
+    12c4:	10876404 	addi	r2,r2,7568
+    12c8:	200b883a 	mov	r5,r4
+    12cc:	11000017 	ldw	r4,0(r2)
+    12d0:	00013cc1 	jmpi	13cc <_malloc_r>
+
+000012d4 <free>:
+    12d4:	00800034 	movhi	r2,0
+    12d8:	10876404 	addi	r2,r2,7568
+    12dc:	200b883a 	mov	r5,r4
+    12e0:	11000017 	ldw	r4,0(r2)
+    12e4:	00012e81 	jmpi	12e8 <_free_r>
+
+000012e8 <_free_r>:
+    12e8:	28003726 	beq	r5,zero,13c8 <_free_r+0xe0>
+    12ec:	28ffff17 	ldw	r3,-4(r5)
+    12f0:	28bfff04 	addi	r2,r5,-4
+    12f4:	1800010e 	bge	r3,zero,12fc <_free_r+0x14>
+    12f8:	10c5883a 	add	r2,r2,r3
+    12fc:	01400034 	movhi	r5,0
+    1300:	2947a704 	addi	r5,r5,7836
+    1304:	28c00017 	ldw	r3,0(r5)
+    1308:	280d883a 	mov	r6,r5
+    130c:	1800031e 	bne	r3,zero,131c <_free_r+0x34>
+    1310:	10000115 	stw	zero,4(r2)
+    1314:	28800015 	stw	r2,0(r5)
+    1318:	f800283a 	ret
+    131c:	10c00c2e 	bgeu	r2,r3,1350 <_free_r+0x68>
+    1320:	11000017 	ldw	r4,0(r2)
+    1324:	110b883a 	add	r5,r2,r4
+    1328:	1940041e 	bne	r3,r5,133c <_free_r+0x54>
+    132c:	19400017 	ldw	r5,0(r3)
+    1330:	18c00117 	ldw	r3,4(r3)
+    1334:	2909883a 	add	r4,r5,r4
+    1338:	11000015 	stw	r4,0(r2)
+    133c:	10c00115 	stw	r3,4(r2)
+    1340:	30800015 	stw	r2,0(r6)
+    1344:	f800283a 	ret
+    1348:	11400336 	bltu	r2,r5,1358 <_free_r+0x70>
+    134c:	2807883a 	mov	r3,r5
+    1350:	19400117 	ldw	r5,4(r3)
+    1354:	283ffc1e 	bne	r5,zero,1348 <_gp+0xffff75bc>
+    1358:	19c00017 	ldw	r7,0(r3)
+    135c:	19cd883a 	add	r6,r3,r7
+    1360:	30800a1e 	bne	r6,r2,138c <_free_r+0xa4>
+    1364:	10800017 	ldw	r2,0(r2)
+    1368:	3885883a 	add	r2,r7,r2
+    136c:	18800015 	stw	r2,0(r3)
+    1370:	1889883a 	add	r4,r3,r2
+    1374:	2900141e 	bne	r5,r4,13c8 <_free_r+0xe0>
+    1378:	29000017 	ldw	r4,0(r5)
+    137c:	2085883a 	add	r2,r4,r2
+    1380:	18800015 	stw	r2,0(r3)
+    1384:	28800117 	ldw	r2,4(r5)
+    1388:	00000e06 	br	13c4 <_free_r+0xdc>
+    138c:	1180032e 	bgeu	r2,r6,139c <_free_r+0xb4>
+    1390:	00800304 	movi	r2,12
+    1394:	20800015 	stw	r2,0(r4)
+    1398:	f800283a 	ret
+    139c:	11000017 	ldw	r4,0(r2)
+    13a0:	110d883a 	add	r6,r2,r4
+    13a4:	2980061e 	bne	r5,r6,13c0 <_free_r+0xd8>
+    13a8:	29800017 	ldw	r6,0(r5)
+    13ac:	3109883a 	add	r4,r6,r4
+    13b0:	11000015 	stw	r4,0(r2)
+    13b4:	29000117 	ldw	r4,4(r5)
+    13b8:	11000115 	stw	r4,4(r2)
+    13bc:	00000106 	br	13c4 <_free_r+0xdc>
+    13c0:	11400115 	stw	r5,4(r2)
+    13c4:	18800115 	stw	r2,4(r3)
+    13c8:	f800283a 	ret
+
+000013cc <_malloc_r>:
+    13cc:	defffb04 	addi	sp,sp,-20
+    13d0:	00bfff04 	movi	r2,-4
+    13d4:	dc400115 	stw	r17,4(sp)
+    13d8:	2c4000c4 	addi	r17,r5,3
+    13dc:	88a2703a 	and	r17,r17,r2
+    13e0:	dc800215 	stw	r18,8(sp)
+    13e4:	dfc00415 	stw	ra,16(sp)
+    13e8:	dcc00315 	stw	r19,12(sp)
+    13ec:	dc000015 	stw	r16,0(sp)
+    13f0:	8c400204 	addi	r17,r17,8
+    13f4:	00800304 	movi	r2,12
+    13f8:	2025883a 	mov	r18,r4
+    13fc:	8880022e 	bgeu	r17,r2,1408 <_malloc_r+0x3c>
+    1400:	1023883a 	mov	r17,r2
+    1404:	00000506 	br	141c <_malloc_r+0x50>
+    1408:	8800040e 	bge	r17,zero,141c <_malloc_r+0x50>
+    140c:	00800304 	movi	r2,12
+    1410:	90800015 	stw	r2,0(r18)
+    1414:	0005883a 	mov	r2,zero
+    1418:	00003b06 	br	1508 <_malloc_r+0x13c>
+    141c:	897ffb36 	bltu	r17,r5,140c <_gp+0xffff7680>
+    1420:	00800034 	movhi	r2,0
+    1424:	1087a704 	addi	r2,r2,7836
+    1428:	10c00017 	ldw	r3,0(r2)
+    142c:	1009883a 	mov	r4,r2
+    1430:	1821883a 	mov	r16,r3
+    1434:	80000926 	beq	r16,zero,145c <_malloc_r+0x90>
+    1438:	80800017 	ldw	r2,0(r16)
+    143c:	1445c83a 	sub	r2,r2,r17
+    1440:	10001516 	blt	r2,zero,1498 <_malloc_r+0xcc>
+    1444:	014002c4 	movi	r5,11
+    1448:	28800d2e 	bgeu	r5,r2,1480 <_malloc_r+0xb4>
+    144c:	80800015 	stw	r2,0(r16)
+    1450:	80a1883a 	add	r16,r16,r2
+    1454:	84400015 	stw	r17,0(r16)
+    1458:	8000221e 	bne	r16,zero,14e4 <_malloc_r+0x118>
+    145c:	04000034 	movhi	r16,0
+    1460:	8407a604 	addi	r16,r16,7832
+    1464:	80800017 	ldw	r2,0(r16)
+    1468:	10000e1e 	bne	r2,zero,14a4 <_malloc_r+0xd8>
+    146c:	000b883a 	mov	r5,zero
+    1470:	9009883a 	mov	r4,r18
+    1474:	00015240 	call	1524 <_sbrk_r>
+    1478:	80800015 	stw	r2,0(r16)
+    147c:	00000906 	br	14a4 <_malloc_r+0xd8>
+    1480:	80800117 	ldw	r2,4(r16)
+    1484:	1c00021e 	bne	r3,r16,1490 <_malloc_r+0xc4>
+    1488:	20800015 	stw	r2,0(r4)
+    148c:	00001506 	br	14e4 <_malloc_r+0x118>
+    1490:	18800115 	stw	r2,4(r3)
+    1494:	00001306 	br	14e4 <_malloc_r+0x118>
+    1498:	8007883a 	mov	r3,r16
+    149c:	84000117 	ldw	r16,4(r16)
+    14a0:	003fe406 	br	1434 <_gp+0xffff76a8>
+    14a4:	880b883a 	mov	r5,r17
+    14a8:	9009883a 	mov	r4,r18
+    14ac:	00015240 	call	1524 <_sbrk_r>
+    14b0:	04ffffc4 	movi	r19,-1
+    14b4:	14ffd526 	beq	r2,r19,140c <_gp+0xffff7680>
+    14b8:	140000c4 	addi	r16,r2,3
+    14bc:	00ffff04 	movi	r3,-4
+    14c0:	80e0703a 	and	r16,r16,r3
+    14c4:	1400021e 	bne	r2,r16,14d0 <_malloc_r+0x104>
+    14c8:	84400015 	stw	r17,0(r16)
+    14cc:	00000506 	br	14e4 <_malloc_r+0x118>
+    14d0:	808bc83a 	sub	r5,r16,r2
+    14d4:	9009883a 	mov	r4,r18
+    14d8:	00015240 	call	1524 <_sbrk_r>
+    14dc:	14fffa1e 	bne	r2,r19,14c8 <_gp+0xffff773c>
+    14e0:	003fca06 	br	140c <_gp+0xffff7680>
+    14e4:	810002c4 	addi	r4,r16,11
+    14e8:	00bffe04 	movi	r2,-8
+    14ec:	80c00104 	addi	r3,r16,4
+    14f0:	2084703a 	and	r2,r4,r2
+    14f4:	10c7c83a 	sub	r3,r2,r3
+    14f8:	18000326 	beq	r3,zero,1508 <_malloc_r+0x13c>
+    14fc:	80e1883a 	add	r16,r16,r3
+    1500:	00c7c83a 	sub	r3,zero,r3
+    1504:	80c00015 	stw	r3,0(r16)
+    1508:	dfc00417 	ldw	ra,16(sp)
+    150c:	dcc00317 	ldw	r19,12(sp)
+    1510:	dc800217 	ldw	r18,8(sp)
+    1514:	dc400117 	ldw	r17,4(sp)
+    1518:	dc000017 	ldw	r16,0(sp)
+    151c:	dec00504 	addi	sp,sp,20
+    1520:	f800283a 	ret
+
+00001524 <_sbrk_r>:
+    1524:	defffd04 	addi	sp,sp,-12
+    1528:	dc000015 	stw	r16,0(sp)
+    152c:	04000034 	movhi	r16,0
+    1530:	dc400115 	stw	r17,4(sp)
+    1534:	8407a804 	addi	r16,r16,7840
+    1538:	2023883a 	mov	r17,r4
+    153c:	2809883a 	mov	r4,r5
+    1540:	dfc00215 	stw	ra,8(sp)
+    1544:	80000015 	stw	zero,0(r16)
+    1548:	000189c0 	call	189c <sbrk>
+    154c:	00ffffc4 	movi	r3,-1
+    1550:	10c0031e 	bne	r2,r3,1560 <_sbrk_r+0x3c>
+    1554:	80c00017 	ldw	r3,0(r16)
+    1558:	18000126 	beq	r3,zero,1560 <_sbrk_r+0x3c>
+    155c:	88c00015 	stw	r3,0(r17)
+    1560:	dfc00217 	ldw	ra,8(sp)
+    1564:	dc400117 	ldw	r17,4(sp)
+    1568:	dc000017 	ldw	r16,0(sp)
+    156c:	dec00304 	addi	sp,sp,12
+    1570:	f800283a 	ret
+
+00001574 <strcpy>:
+    1574:	2005883a 	mov	r2,r4
+    1578:	200d883a 	mov	r6,r4
+    157c:	28c00003 	ldbu	r3,0(r5)
+    1580:	31800044 	addi	r6,r6,1
+    1584:	29400044 	addi	r5,r5,1
+    1588:	30ffffc5 	stb	r3,-1(r6)
+    158c:	18c03fcc 	andi	r3,r3,255
+    1590:	18c0201c 	xori	r3,r3,128
+    1594:	18ffe004 	addi	r3,r3,-128
+    1598:	183ff81e 	bne	r3,zero,157c <_gp+0xffff77f0>
+    159c:	f800283a 	ret
+
+000015a0 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    15a0:	deffff04 	addi	sp,sp,-4
+    15a4:	01000034 	movhi	r4,0
+    15a8:	01400034 	movhi	r5,0
+    15ac:	dfc00015 	stw	ra,0(sp)
+    15b0:	21072b04 	addi	r4,r4,7340
+    15b4:	29476704 	addi	r5,r5,7580
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    15b8:	2140061e 	bne	r4,r5,15d4 <alt_load+0x34>
+    15bc:	01000034 	movhi	r4,0
+    15c0:	01400034 	movhi	r5,0
+    15c4:	21000804 	addi	r4,r4,32
+    15c8:	29400804 	addi	r5,r5,32
+    15cc:	2140121e 	bne	r4,r5,1618 <alt_load+0x78>
+    15d0:	00000b06 	br	1600 <alt_load+0x60>
+    15d4:	00c00034 	movhi	r3,0
+    15d8:	18c76704 	addi	r3,r3,7580
+    15dc:	1907c83a 	sub	r3,r3,r4
+    15e0:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    15e4:	10fff526 	beq	r2,r3,15bc <_gp+0xffff7830>
+    {
+      *to++ = *from++;
+    15e8:	114f883a 	add	r7,r2,r5
+    15ec:	39c00017 	ldw	r7,0(r7)
+    15f0:	110d883a 	add	r6,r2,r4
+    15f4:	10800104 	addi	r2,r2,4
+    15f8:	31c00015 	stw	r7,0(r6)
+    15fc:	003ff906 	br	15e4 <_gp+0xffff7858>
+    1600:	01000034 	movhi	r4,0
+    1604:	01400034 	movhi	r5,0
+    1608:	21067004 	addi	r4,r4,6592
+    160c:	29467004 	addi	r5,r5,6592
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    1610:	2140101e 	bne	r4,r5,1654 <alt_load+0xb4>
+    1614:	00000b06 	br	1644 <alt_load+0xa4>
+    1618:	00c00034 	movhi	r3,0
+    161c:	18c00804 	addi	r3,r3,32
+    1620:	1907c83a 	sub	r3,r3,r4
+    1624:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    1628:	10fff526 	beq	r2,r3,1600 <_gp+0xffff7874>
+    {
+      *to++ = *from++;
+    162c:	114f883a 	add	r7,r2,r5
+    1630:	39c00017 	ldw	r7,0(r7)
+    1634:	110d883a 	add	r6,r2,r4
+    1638:	10800104 	addi	r2,r2,4
+    163c:	31c00015 	stw	r7,0(r6)
+    1640:	003ff906 	br	1628 <_gp+0xffff789c>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    1644:	00019400 	call	1940 <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+    1648:	dfc00017 	ldw	ra,0(sp)
+    164c:	dec00104 	addi	sp,sp,4
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+  alt_icache_flush_all();
+    1650:	00019581 	jmpi	1958 <alt_icache_flush_all>
+    1654:	00c00034 	movhi	r3,0
+    1658:	18c72b04 	addi	r3,r3,7340
+    165c:	1907c83a 	sub	r3,r3,r4
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    1660:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    1664:	18bff726 	beq	r3,r2,1644 <_gp+0xffff78b8>
+    {
+      *to++ = *from++;
+    1668:	114f883a 	add	r7,r2,r5
+    166c:	39c00017 	ldw	r7,0(r7)
+    1670:	110d883a 	add	r6,r2,r4
+    1674:	10800104 	addi	r2,r2,4
+    1678:	31c00015 	stw	r7,0(r6)
+    167c:	003ff906 	br	1664 <_gp+0xffff78d8>
+
+00001680 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    1680:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    1684:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    1688:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    168c:	00018e80 	call	18e8 <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    1690:	00019080 	call	1908 <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    1694:	d1a04617 	ldw	r6,-32488(gp)
+    1698:	d1604717 	ldw	r5,-32484(gp)
+    169c:	d1204817 	ldw	r4,-32480(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+    16a0:	dfc00017 	ldw	ra,0(sp)
+    16a4:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    16a8:	00000ec1 	jmpi	ec <main>
+
+000016ac <alt_printf>:
+/* 
+ * ALT printf function 
+ */
+void 
+alt_printf(const char* fmt, ... )
+{
+    16ac:	defff204 	addi	sp,sp,-56
+    16b0:	2005883a 	mov	r2,r4
+    16b4:	dfc00a15 	stw	ra,40(sp)
+    16b8:	df000915 	stw	fp,36(sp)
+    16bc:	ddc00815 	stw	r23,32(sp)
+    16c0:	dd800715 	stw	r22,28(sp)
+    16c4:	dd400615 	stw	r21,24(sp)
+    16c8:	dd000515 	stw	r20,20(sp)
+    16cc:	dcc00415 	stw	r19,16(sp)
+    16d0:	dc800315 	stw	r18,12(sp)
+    16d4:	dc400215 	stw	r17,8(sp)
+    16d8:	dc000115 	stw	r16,4(sp)
+    16dc:	d9400b15 	stw	r5,44(sp)
+    16e0:	d9800c15 	stw	r6,48(sp)
+    16e4:	d9c00d15 	stw	r7,52(sp)
+    w = fmt;
+    while ((c = *w++) != 0)
+    {
+        /* If not a format escape character, just print  */
+        /* character.  Otherwise, process format string. */
+        if (c != '%')
+    16e8:	04000944 	movi	r16,37
+ */
+void 
+alt_printf(const char* fmt, ... )
+{
+	va_list args;
+	va_start(args, fmt);
+    16ec:	dd400b04 	addi	r21,sp,44
+                if (c == '%')
+                {
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+                } 
+                else if (c == 'c')
+    16f0:	048018c4 	movi	r18,99
+                {
+                    int v = va_arg(args, int);
+                    alt_putchar(v);
+                }
+                else if (c == 'x')
+    16f4:	04c01e04 	movi	r19,120
+                        else
+                            c = 'a' + digit - 10;
+                        alt_putchar(c);
+                    }
+                }
+                else if (c == 's')
+    16f8:	05001cc4 	movi	r20,115
+    const char *w;
+    char c;
+
+    /* Process format string. */
+    w = fmt;
+    while ((c = *w++) != 0)
+    16fc:	11000007 	ldb	r4,0(r2)
+    1700:	20003a26 	beq	r4,zero,17ec <alt_printf+0x140>
+    {
+        /* If not a format escape character, just print  */
+        /* character.  Otherwise, process format string. */
+        if (c != '%')
+    1704:	24000226 	beq	r4,r16,1710 <alt_printf+0x64>
+    const char *w;
+    char c;
+
+    /* Process format string. */
+    w = fmt;
+    while ((c = *w++) != 0)
+    1708:	14400044 	addi	r17,r2,1
+    170c:	00001406 	br	1760 <alt_printf+0xb4>
+        }
+        else
+        {
+            /* Get format character.  If none     */
+            /* available, processing is complete. */
+            if ((c = *w++) != 0)
+    1710:	14400084 	addi	r17,r2,2
+    1714:	10800047 	ldb	r2,1(r2)
+    1718:	10003426 	beq	r2,zero,17ec <alt_printf+0x140>
+            {
+                if (c == '%')
+    171c:	1400021e 	bne	r2,r16,1728 <alt_printf+0x7c>
+                {
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+    1720:	8009883a 	mov	r4,r16
+    1724:	00000e06 	br	1760 <alt_printf+0xb4>
+                } 
+                else if (c == 'c')
+    1728:	1480051e 	bne	r2,r18,1740 <alt_printf+0x94>
+                {
+                    int v = va_arg(args, int);
+                    alt_putchar(v);
+    172c:	a9000017 	ldw	r4,0(r21)
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+                } 
+                else if (c == 'c')
+                {
+                    int v = va_arg(args, int);
+    1730:	ad800104 	addi	r22,r21,4
+    1734:	b02b883a 	mov	r21,r22
+                    alt_putchar(v);
+    1738:	000181c0 	call	181c <alt_putchar>
+    173c:	00002906 	br	17e4 <alt_printf+0x138>
+                }
+                else if (c == 'x')
+    1740:	14c0201e 	bne	r2,r19,17c4 <alt_printf+0x118>
+                {
+                    /* Process hexadecimal number format. */
+                    unsigned long v = va_arg(args, unsigned long);
+    1744:	adc00017 	ldw	r23,0(r21)
+    1748:	ad400104 	addi	r21,r21,4
+                    unsigned long digit;
+                    int digit_shift;
+
+                    /* If the number value is zero, just print and continue. */
+                    if (v == 0)
+    174c:	b8000326 	beq	r23,zero,175c <alt_printf+0xb0>
+    1750:	05800704 	movi	r22,28
+                        continue;
+                    }
+
+                    /* Find first non-zero digit. */
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+    1754:	00c003c4 	movi	r3,15
+    1758:	00000306 	br	1768 <alt_printf+0xbc>
+                    int digit_shift;
+
+                    /* If the number value is zero, just print and continue. */
+                    if (v == 0)
+                    {
+                        alt_putchar('0');
+    175c:	01000c04 	movi	r4,48
+    1760:	000181c0 	call	181c <alt_putchar>
+                        continue;
+    1764:	00001f06 	br	17e4 <alt_printf+0x138>
+                    }
+
+                    /* Find first non-zero digit. */
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+    1768:	1d84983a 	sll	r2,r3,r22
+    176c:	15c4703a 	and	r2,r2,r23
+    1770:	1000021e 	bne	r2,zero,177c <alt_printf+0xd0>
+                        digit_shift -= 4;
+    1774:	b5bfff04 	addi	r22,r22,-4
+    1778:	003ffb06 	br	1768 <_gp+0xffff79dc>
+
+                    /* Print digits. */
+                    for (; digit_shift >= 0; digit_shift -= 4)
+                    {
+                        digit = (v & (0xF << digit_shift)) >> digit_shift;
+    177c:	070003c4 	movi	fp,15
+                        if (digit <= 9)
+    1780:	00c00244 	movi	r3,9
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+                        digit_shift -= 4;
+
+                    /* Print digits. */
+                    for (; digit_shift >= 0; digit_shift -= 4)
+    1784:	b0001716 	blt	r22,zero,17e4 <alt_printf+0x138>
+                    {
+                        digit = (v & (0xF << digit_shift)) >> digit_shift;
+    1788:	e588983a 	sll	r4,fp,r22
+    178c:	25c8703a 	and	r4,r4,r23
+    1790:	2588d83a 	srl	r4,r4,r22
+                        if (digit <= 9)
+    1794:	19000236 	bltu	r3,r4,17a0 <alt_printf+0xf4>
+                            c = '0' + digit;
+    1798:	21000c04 	addi	r4,r4,48
+    179c:	00000106 	br	17a4 <alt_printf+0xf8>
+                        else
+                            c = 'a' + digit - 10;
+    17a0:	210015c4 	addi	r4,r4,87
+                        alt_putchar(c);
+    17a4:	21003fcc 	andi	r4,r4,255
+    17a8:	2100201c 	xori	r4,r4,128
+    17ac:	213fe004 	addi	r4,r4,-128
+    17b0:	d8c00015 	stw	r3,0(sp)
+    17b4:	000181c0 	call	181c <alt_putchar>
+                    digit_shift = 28;
+                    while (!(v & (0xF << digit_shift)))
+                        digit_shift -= 4;
+
+                    /* Print digits. */
+                    for (; digit_shift >= 0; digit_shift -= 4)
+    17b8:	b5bfff04 	addi	r22,r22,-4
+    17bc:	d8c00017 	ldw	r3,0(sp)
+    17c0:	003ff006 	br	1784 <_gp+0xffff79f8>
+                        else
+                            c = 'a' + digit - 10;
+                        alt_putchar(c);
+                    }
+                }
+                else if (c == 's')
+    17c4:	1500071e 	bne	r2,r20,17e4 <alt_printf+0x138>
+                {
+                    /* Process string format. */
+                    char *s = va_arg(args, char *);
+    17c8:	ad800017 	ldw	r22,0(r21)
+    17cc:	ad400104 	addi	r21,r21,4
+
+                    while(*s)
+    17d0:	b1000007 	ldb	r4,0(r22)
+    17d4:	20000326 	beq	r4,zero,17e4 <alt_printf+0x138>
+                      alt_putchar(*s++);
+    17d8:	b5800044 	addi	r22,r22,1
+    17dc:	000181c0 	call	181c <alt_putchar>
+    17e0:	003ffb06 	br	17d0 <_gp+0xffff7a44>
+                    /* Process "%" escape sequence. */
+                    alt_putchar(c);
+                } 
+                else if (c == 'c')
+                {
+                    int v = va_arg(args, int);
+    17e4:	8805883a 	mov	r2,r17
+    17e8:	003fc406 	br	16fc <_gp+0xffff7970>
+        }
+    }
+#ifdef ALT_SEMIHOSTING
+    alt_putbufflush();
+#endif
+}
+    17ec:	dfc00a17 	ldw	ra,40(sp)
+    17f0:	df000917 	ldw	fp,36(sp)
+    17f4:	ddc00817 	ldw	r23,32(sp)
+    17f8:	dd800717 	ldw	r22,28(sp)
+    17fc:	dd400617 	ldw	r21,24(sp)
+    1800:	dd000517 	ldw	r20,20(sp)
+    1804:	dcc00417 	ldw	r19,16(sp)
+    1808:	dc800317 	ldw	r18,12(sp)
+    180c:	dc400217 	ldw	r17,8(sp)
+    1810:	dc000117 	ldw	r16,4(sp)
+    1814:	dec00e04 	addi	sp,sp,56
+    1818:	f800283a 	ret
+
+0000181c <alt_putchar>:
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    181c:	defffd04 	addi	sp,sp,-12
+    1820:	dc000115 	stw	r16,4(sp)
+	char        c1 = (char)(c & 0xff);
+    return write(STDOUT_FILENO,&c1,1);
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+    1824:	d9000005 	stb	r4,0(sp)
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    1828:	2021883a 	mov	r16,r4
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+
+    if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
+    182c:	01000034 	movhi	r4,0
+    1830:	000f883a 	mov	r7,zero
+    1834:	01800044 	movi	r6,1
+    1838:	d80b883a 	mov	r5,sp
+    183c:	21076604 	addi	r4,r4,7576
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    1840:	dfc00215 	stw	ra,8(sp)
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+
+    if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
+    1844:	000190c0 	call	190c <altera_avalon_jtag_uart_write>
+    1848:	00ffffc4 	movi	r3,-1
+    184c:	10c00126 	beq	r2,r3,1854 <alt_putchar+0x38>
+        return -1;
+    }
+    return c;
+    1850:	8005883a 	mov	r2,r16
+#else
+    return putchar(c);
+#endif
+#endif
+}
+    1854:	dfc00217 	ldw	ra,8(sp)
+    1858:	dc000117 	ldw	r16,4(sp)
+    185c:	dec00304 	addi	sp,sp,12
+    1860:	f800283a 	ret
+
+00001864 <alt_putstr>:
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided fputs() routine.
+ */
+int 
+alt_putstr(const char* str)
+{
+    1864:	defffe04 	addi	sp,sp,-8
+    1868:	dc000015 	stw	r16,0(sp)
+    186c:	dfc00115 	stw	ra,4(sp)
+    1870:	2021883a 	mov	r16,r4
+#ifdef ALT_SEMIHOSTING
+    return write(STDOUT_FILENO,str,strlen(str));
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, str, strlen(str), 0);
+    1874:	00019a40 	call	19a4 <strlen>
+    1878:	01000034 	movhi	r4,0
+    187c:	000f883a 	mov	r7,zero
+    1880:	100d883a 	mov	r6,r2
+    1884:	800b883a 	mov	r5,r16
+    1888:	21076604 	addi	r4,r4,7576
+#else
+    return fputs(str, stdout);
+#endif
+#endif
+}
+    188c:	dfc00117 	ldw	ra,4(sp)
+    1890:	dc000017 	ldw	r16,0(sp)
+    1894:	dec00204 	addi	sp,sp,8
+#ifdef ALT_SEMIHOSTING
+    return write(STDOUT_FILENO,str,strlen(str));
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, str, strlen(str), 0);
+    1898:	000190c1 	jmpi	190c <altera_avalon_jtag_uart_write>
+
+0000189c <sbrk>:
+static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE 
+       alt_irq_disable_all (void)
+{
+  alt_irq_context context;
+
+  NIOS2_READ_STATUS (context);
+    189c:	000b303a 	rdctl	r5,status
+
+  NIOS2_WRITE_STATUS (context & ~NIOS2_STATUS_PIE_MSK);
+    18a0:	00bfff84 	movi	r2,-2
+    18a4:	2884703a 	and	r2,r5,r2
+    18a8:	1001703a 	wrctl	status,r2
+  char *prev_heap_end; 
+
+  context = alt_irq_disable_all();
+
+  /* Always return data aligned on a word boundary */
+  heap_end = (char *)(((unsigned int)heap_end + 3) & ~3);
+    18ac:	d0a00217 	ldw	r2,-32760(gp)
+    18b0:	00ffff04 	movi	r3,-4
+    18b4:	108000c4 	addi	r2,r2,3
+    18b8:	10c4703a 	and	r2,r2,r3
+  if (((heap_end + incr) - __alt_heap_start) > ALT_MAX_HEAP_BYTES) {
+    alt_irq_enable_all(context);
+    return (caddr_t)-1;
+  }
+#else
+  if ((heap_end + incr) > __alt_heap_limit) {
+    18bc:	00c00074 	movhi	r3,1
+  char *prev_heap_end; 
+
+  context = alt_irq_disable_all();
+
+  /* Always return data aligned on a word boundary */
+  heap_end = (char *)(((unsigned int)heap_end + 3) & ~3);
+    18c0:	d0a00215 	stw	r2,-32760(gp)
+  if (((heap_end + incr) - __alt_heap_start) > ALT_MAX_HEAP_BYTES) {
+    alt_irq_enable_all(context);
+    return (caddr_t)-1;
+  }
+#else
+  if ((heap_end + incr) > __alt_heap_limit) {
+    18c4:	1109883a 	add	r4,r2,r4
+    18c8:	18e71004 	addi	r3,r3,-25536
+    18cc:	1900032e 	bgeu	r3,r4,18dc <sbrk+0x40>
+  status &= ~NIOS2_STATUS_PIE_MSK;
+  status |= (context & NIOS2_STATUS_PIE_MSK);
+  
+  NIOS2_WRITE_STATUS (status);
+#else
+  NIOS2_WRITE_STATUS (context);
+    18d0:	2801703a 	wrctl	status,r5
+    alt_irq_enable_all(context);
+    return (caddr_t)-1;
+    18d4:	00bfffc4 	movi	r2,-1
+    18d8:	f800283a 	ret
+  }
+#endif
+
+  prev_heap_end = heap_end; 
+  heap_end += incr; 
+    18dc:	d1200215 	stw	r4,-32760(gp)
+    18e0:	2801703a 	wrctl	status,r5
+#endif
+
+  alt_irq_enable_all(context);
+
+  return (caddr_t) prev_heap_end; 
+} 
+    18e4:	f800283a 	ret
+
+000018e8 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    18e8:	deffff04 	addi	sp,sp,-4
+    18ec:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_GEN2_IRQ_INIT ( NIOS2_CPU, nios2_cpu);
+    18f0:	00019640 	call	1964 <altera_nios2_gen2_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts (void)
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    18f4:	00800044 	movi	r2,1
+    18f8:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    18fc:	dfc00017 	ldw	ra,0(sp)
+    1900:	dec00104 	addi	sp,sp,4
+    1904:	f800283a 	ret
+
+00001908 <alt_sys_init>:
+ * Initialize the non-interrupt controller devices.
+ * Called after alt_irq_init().
+ */
+
+void alt_sys_init( void )
+{
+    1908:	f800283a 	ret
+
+0000190c <altera_avalon_jtag_uart_write>:
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+  unsigned int base = sp->base;
+    190c:	21000017 	ldw	r4,0(r4)
+ * one FIFOs worth of data.  But you said you didn't want to use interrupts :-)
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+    1910:	3005883a 	mov	r2,r6
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+    1914:	298d883a 	add	r6,r5,r6
+
+  while (ptr < end)
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    1918:	21c00104 	addi	r7,r4,4
+{
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+
+  while (ptr < end)
+    191c:	2980072e 	bgeu	r5,r6,193c <altera_avalon_jtag_uart_write+0x30>
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    1920:	38c00037 	ldwio	r3,0(r7)
+    1924:	18ffffec 	andhi	r3,r3,65535
+    1928:	183ffc26 	beq	r3,zero,191c <_gp+0xffff7b90>
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+    192c:	28c00007 	ldb	r3,0(r5)
+    1930:	20c00035 	stwio	r3,0(r4)
+    1934:	29400044 	addi	r5,r5,1
+    1938:	003ff806 	br	191c <_gp+0xffff7b90>
+
+  return count;
+}
+    193c:	f800283a 	ret
+
+00001940 <alt_dcache_flush_all>:
+void alt_dcache_flush_all (void)
+{
+#if NIOS2_DCACHE_SIZE > 0
+  char* i;
+  
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+    1940:	0005883a 	mov	r2,zero
+    1944:	00c20004 	movi	r3,2048
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+    1948:	1000003b 	flushd	0(r2)
+void alt_dcache_flush_all (void)
+{
+#if NIOS2_DCACHE_SIZE > 0
+  char* i;
+  
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+    194c:	10800804 	addi	r2,r2,32
+    1950:	10fffd1e 	bne	r2,r3,1948 <_gp+0xffff7bbc>
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+  }
+#endif /* NIOS2_DCACHE_SIZE > 0 */
+}
+    1954:	f800283a 	ret
+
+00001958 <alt_icache_flush_all>:
+ */
+
+void alt_icache_flush_all (void)
+{
+#if NIOS2_ICACHE_SIZE > 0
+  alt_icache_flush (0, NIOS2_ICACHE_SIZE);
+    1958:	01440004 	movi	r5,4096
+    195c:	0009883a 	mov	r4,zero
+    1960:	000196c1 	jmpi	196c <alt_icache_flush>
+
+00001964 <altera_nios2_gen2_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_gen2_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+    1964:	000170fa 	wrctl	ienable,zero
+    1968:	f800283a 	ret
+
+0000196c <alt_icache_flush>:
+  if (len > NIOS2_ICACHE_SIZE)
+  {
+    len = NIOS2_ICACHE_SIZE;
+  }
+
+  end = ((char*) start) + len;
+    196c:	00840004 	movi	r2,4096
+    1970:	1140012e 	bgeu	r2,r5,1978 <alt_icache_flush+0xc>
+    1974:	100b883a 	mov	r5,r2
+    1978:	214b883a 	add	r5,r4,r5
+
+  for (i = start; i < end; i+= NIOS2_ICACHE_LINE_SIZE)
+    197c:	2005883a 	mov	r2,r4
+    1980:	1140032e 	bgeu	r2,r5,1990 <alt_icache_flush+0x24>
+  { 
+    __asm__ volatile ("flushi %0" :: "r" (i)); 
+    1984:	1000603a 	flushi	r2
+    len = NIOS2_ICACHE_SIZE;
+  }
+
+  end = ((char*) start) + len;
+
+  for (i = start; i < end; i+= NIOS2_ICACHE_LINE_SIZE)
+    1988:	10800804 	addi	r2,r2,32
+    198c:	003ffc06 	br	1980 <_gp+0xffff7bf4>
+   * For an unaligned flush request, we've got one more line left.
+   * Note that this is dependent on NIOS2_ICACHE_LINE_SIZE to be a 
+   * multiple of 2 (which it always is).
+   */
+
+  if (((alt_u32) start) & (NIOS2_ICACHE_LINE_SIZE - 1))
+    1990:	210007cc 	andi	r4,r4,31
+    1994:	20000126 	beq	r4,zero,199c <alt_icache_flush+0x30>
+  {
+    __asm__ volatile ("flushi %0" :: "r" (i));
+    1998:	1000603a 	flushi	r2
+  /* 
+   * Having flushed the cache, flush any stale instructions in the 
+   * pipeline 
+   */
+
+  __asm__ volatile ("flushp");
+    199c:	0000203a 	flushp
+    19a0:	f800283a 	ret
+
+000019a4 <strlen>:
+    19a4:	2005883a 	mov	r2,r4
+    19a8:	10c00007 	ldb	r3,0(r2)
+    19ac:	18000226 	beq	r3,zero,19b8 <strlen+0x14>
+    19b0:	10800044 	addi	r2,r2,1
+    19b4:	003ffc06 	br	19a8 <_gp+0xffff7c1c>
+    19b8:	1105c83a 	sub	r2,r2,r4
+    19bc:	f800283a 	ret

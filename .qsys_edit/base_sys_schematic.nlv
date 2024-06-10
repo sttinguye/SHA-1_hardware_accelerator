@@ -1,0 +1,24 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst base_sys.sys_id -pg 1 -lvl 3 -y 250
+preplace inst base_sys.nios2_cpu.reset_bridge -pg 1
+preplace inst base_sys.nios2_cpu.clock_bridge -pg 1
+preplace inst base_sys.sys_timer -pg 1 -lvl 3 -y 330
+preplace inst base_sys.sys_clk -pg 1 -lvl 1 -y 340
+preplace inst base_sys.sys_jtag_uart -pg 1 -lvl 3 -y 150
+preplace inst base_sys.sys_mem -pg 1 -lvl 3 -y 430
+preplace inst base_sys.nios2_cpu.cpu -pg 1
+preplace inst base_sys.sys_pio_out -pg 1 -lvl 3 -y 570
+preplace inst base_sys -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst base_sys.nios2_cpu -pg 1 -lvl 2 -y 320
+preplace inst base_sys.sys_pio_in -pg 1 -lvl 3 -y 30
+preplace netloc EXPORT<net_container>base_sys</net_container>(SLAVE)sys_clk.clk_in,(SLAVE)base_sys.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>base_sys</net_container>(SLAVE)sys_clk.clk_in_reset,(SLAVE)base_sys.reset) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>base_sys</net_container>(SLAVE)sys_mem.s1,(MASTER)nios2_cpu.instruction_master,(SLAVE)nios2_cpu.debug_mem_slave,(SLAVE)sys_pio_out.s1,(SLAVE)sys_jtag_uart.avalon_jtag_slave,(SLAVE)sys_pio_in.s1,(SLAVE)sys_timer.s1,(SLAVE)sys_id.control_slave,(MASTER)nios2_cpu.data_master,(SLAVE)sys_mem.s2) 1 1 2 320 640 680
+preplace netloc FAN_OUT<net_container>base_sys</net_container>(MASTER)nios2_cpu.irq,(SLAVE)sys_pio_in.irq,(SLAVE)sys_jtag_uart.irq,(SLAVE)sys_timer.irq) 1 2 1 720
+preplace netloc FAN_OUT<net_container>base_sys</net_container>(SLAVE)sys_id.clk,(SLAVE)sys_mem.clk2,(SLAVE)sys_mem.clk1,(SLAVE)sys_pio_out.clk,(SLAVE)nios2_cpu.clk,(SLAVE)sys_pio_in.clk,(SLAVE)sys_jtag_uart.clk,(MASTER)sys_clk.clk,(SLAVE)sys_timer.clk) 1 1 2 300 460 740
+preplace netloc EXPORT<net_container>base_sys</net_container>(SLAVE)sys_pio_out.external_connection,(SLAVE)base_sys.pio_leds) 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc EXPORT<net_container>base_sys</net_container>(SLAVE)sys_pio_in.external_connection,(SLAVE)base_sys.pio_input) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc INTERCONNECT<net_container>base_sys</net_container>(SLAVE)nios2_cpu.reset,(SLAVE)sys_mem.reset2,(MASTER)nios2_cpu.debug_reset_request,(SLAVE)sys_jtag_uart.reset,(SLAVE)sys_mem.reset1,(MASTER)sys_clk.clk_reset,(SLAVE)sys_timer.reset,(SLAVE)sys_id.reset,(SLAVE)sys_pio_in.reset,(SLAVE)sys_pio_out.reset) 1 1 2 280 620 700
+levelinfo -pg 1 0 70 930
+levelinfo -hier base_sys 80 110 440 770 920
